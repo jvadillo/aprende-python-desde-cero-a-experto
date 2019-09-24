@@ -1,11 +1,11 @@
 # Cadenas de texto (string)
  Las cadenas de texto o strings se definen mediante comilla simple (`' '`) o doble comilla (`" "`):
-
+```python
     mi_nombre = 'Ane'
     print(mi_nombre)
     mi_nombre= "Ane"
     print(mi_nombre)
-
+```
 La diferencia principal es la mayor facilidad de las comillas dobles para introducir apóstrofes:
 
     mi_nombre = 'I\'m John'
