@@ -1,4 +1,4 @@
-# Aprende Python desde cero a experto (Work In Progress :construction:)
+# Aprende Python desde cero a experto :rocket: (Work In Progress :construction:)
 
 Este es un libro para aprender Python desde cero. Ha sido creado para aprender de forma eficiente, centrándose en los aspectos más útiles del lenguaje (sin perder el tiempo es cosas que nunca utilizarás). Mediante pequeñas prácticas y ejemplos irás aprendiendo los fundamentos básicos de Python  hasta llegar a dominar el lenguaje.
 
