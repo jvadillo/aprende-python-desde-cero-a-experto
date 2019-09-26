@@ -4,14 +4,17 @@ La herencia es una técnica de la Programación Orientada a Objetos en la que un
 
 La sintaxis para definir una clase que herede de otra es la siguiente:
 
+```python
     class ClaseBase:
       # código de la clase base
     
     class Subclase(BaseClass):
       # código de la subclase
+```
 
 La subclase puede añadir funcionalidades. Esta técnica permite **reutilizar código**.
 
+```python
     class Dispositivo:
     	def __init__(self,identificador,marca):
     		self.identificador = identificador
@@ -33,24 +36,14 @@ La subclase puede añadir funcionalidades. Esta técnica permite **reutilizar c�
     t1 = Teclado("0001", "Logitech", "AZERTY")
     t1.conectar()
     t1.pulsar_tecla("a")
-	
+```	
 
 ## Herencia múltiple
 
 Python soporta la herencia múltiple, es decir, heredad métodos y atributos de más de un padre. En caso de heredar atributos o métodos con el mismo nombre, Python dará prioridad al posicionado más a la izquierda en la declaración.
 
+```python
     # en caso de conflicto Dispositivo tendrá prioridad sobre Periférico
     class Teclado(Dispositivo, Periférico):
 	    # cuerpo de la clase
-
-## Private y protected
-A diferencia de otros lenguajes de Programación Orientada a Objetos, todos los métodos y atributos en Python son públicos. Es decir, **no es posible definir una variable como** `private` o `protected`. 
-
-Existe una convención de añadir como prefijo un **guión bajo** (`_`) a los atributos que consideramos como **protected** y dos guiones bajos (__) a las variables que consideramos private.
-
-```
-class Persona:
-    def __init__(self, nombre, edad):
-        self._nombre = nombre  # atributo protected 
-        self.__edad = edad # atributo private
 ```
