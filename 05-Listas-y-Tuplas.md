@@ -1,11 +1,13 @@
-# Listas
+# Listas y tuplas
 Las listas permiten **guardar más de un elemento** dentro de una variable en un orden concreto. Pueden contener un número **ilimitado** de variables de **cualquier tipo**:
 
+```python
     alumnos = ["Ane", "Unai", "Itziar", "Mikel"]
     print(alumnos [0]) # muestra "Ane"
     print(alumnos [1]) # muestra "Unai"
     print(alumnos [2]) # muestra "Itziar"
     print(alumnos [-1]) # muestra "Mikel"
+```
 
 Los **métodos más utilizados** con las listas son los siguientes:
 | Método | Acción |
@@ -22,5 +24,25 @@ Los **métodos más utilizados** con las listas son los siguientes:
 | `alumnos.copy()` | Devuelve una copia de la lista |
 | `alumnos.extend(otra_lista)` | Fusiona las dos listas |
 
-## Recorrer una lista
+### Recorrer una lista
 TODO
+
+## Tuplas
+Las tuplas son **listas inmutables**. Es decir, una vez declaradas, no se pueden realizar modificaciones sobre ellas (añadir/eliminar elementos o hacer modificaciones sobre ellos). Para definir una tupla se escriben los elementos entre paréntesis:
+
+```python
+    valores = (1,2,3)
+```
+El acceso a sus elementos se hace de igual que con listas:
+
+```python
+    valores = ("a", "b", "c","d","e","f")  
+    print(valores[1])
+    print(valores[2:4])
+```
+
+Una acción típica de las tuplas es "desempaquetar" (unpack) sus valores:
+
+```python
+    a, b, c = valores 
+```
