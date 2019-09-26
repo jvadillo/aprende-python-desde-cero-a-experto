@@ -1,216 +1,118 @@
-# Variables y Tipos de datos
-Las variables permiten almacenar datos del programa. Las variables será de un tipo u otro en función de la información que se guarde en ellas. El nombre de una variable se conoce como **identificador**, y deberá cumplir las siguientes reglas:
 
- - Comenzar con una letra o un guión bajo
- - El resto de nombre estará formado por letras, números o guiones bajos.
- - Los nombres de las variables son case sensitive, es decir, no es lo mismo que una variable se llame `resultado` que `RESULTADO`.
- - Existe una serie de palabras reservadas que no se pueden utilizar (def, global, return, if, for, ...).
+# Introducción
+Python es uno de los lenguajes de programación más populares. En comparación a otros lenguajes de programación, Python tiene una **curva de aprendizaje pequeña y un gran potencial** realizar tareas de todo tipo, como por ejemplo:
+ - Desarrollo de aplicaciones web
+ - Inteligencia artificial
+ - Automatización de tareas
+ - Análisis avanzado de datos
 
-Existen algunas recomendaciones respecto a los nombres de las variables, recogidas en la [guía de estilo PEP8 de Python](https://www.python.org/dev/peps/pep-0008/):
+## Características principales
+Se trata de un lenguaje **open source** en el que destaca su legibilidad. El código es limpio y ordenado, lo cual lo convierte en un lenguaje fácil de leer y escribir, en definitiva:  **fácil de entender y aprender**. 
+Al contrario que otros lenguajes de programación, **Python es un lenguaje interpretado**, lo que significa que no es necesario compilar el código de Python antes de ejecutarlo. El intérprete irá ejecutando el código línea por línea. 
 
- - Utilizar nombres descriptivos, en minúsculas y separados por guiones bajos si fuese necesario: `resultado`, `mi_variable`, `valor_anterior`,...
- - Escribir las constantes en mayúsculas: `MI_CONSTANTE`, `NUMERO_PI`, ...
- - Antes y después del signo `=`, debe haber uno (y solo un) espacio en blanco.
+Otra de las principales características de Python es que es que es un lenguaje de programación **dinámicamente tipado**, es decir, el programador no tiene que declarar el tipo de las variables si no que se decide automáticamente en el tiempo de ejecución.
 
-## Resumen de tipos de variables
+Por último, comentar que una de las mayores ventajas de este lenguaje de programación **orientado a objetos** es la extensa variedad de **liberías y frameworks** disponibles para cualquier propósito, lo cual hace que Python sea la opción perfecta para aplicaciones de todo tipo.
 
-```python
-    edad = 24 # número entero (integer)
-    precio = 112.9 # número de punto flotante (float)
-    titulo = ‘Aprende Python desde cero’ # cadena de texto (string)
-    test = True # booleano
+## Instalación de Python
+Python es un lenguaje multiplataforma, lo cual significa que podemos trabajar con Python tanto en Windows, Mac o Linux. A pesar de que todavía encontrarás código escrito en Python 2, en la actualidad la versión recomenda es Python 3.
+
+### Instalar Python en Windows
+Estos son los pasos para instalar Python en Windows:
+
+ 1. Descarga la última versión de Python para Windows desde la página web oficial:https://www.python.org/downloads/windows/
+ 2. En función de la versión de tu sistema operativo (32 btis o 64 bits), tendrás que escoger entre una de las dos versiones: **Windows x86 executable installer** o **Windows x86-64 executable installer**.
+ 3. Una vez descargado, ejecuta el instalador marcando las casillas "Add Python 3.6 to PATH" y "Add Python to your environment variables".
+
+### Instalar Python en Ubuntu
+En primer lugar comprueba que Python no esté instalado en el sistema mediante el siguiente comando:
+```
+$ python3 --version
+Python 3.6.1
+```
+En caso de no estar instalado, basta con ejecutar el siguiente comando en la consola:
+```
+$ sudo apt install python3
 ```
 
-## Lectura de datos en Python
+### Instalar Python en Mac
+La instalación para Mac es sencilla y directa. Simplemente descarga la última versión de Python desde la página web oficial y ejecuta el archivo .pkg descargado.
 
-La función input() permite introducir datos al usuario:
+## Entorno de desarrollo
+### Editores de código
+Para programar en Python es suficiente con tener un editor de texto cualquiera, aunque hoy en día es recomendable utilizar un editor avanzado o un IDE que permita programar de forma ágil. Algunas de las opciones más recomendadas son:
 
+ - Editores de texto 
+	 - Atom: [https://atom.io/](https://atom.io/) 
+	 - Sublime Text: [https://www.sublimetext.com/3](https://www.sublimetext.com/3)
+	 - Visual Studio Code: [https://code.visualstudio.com/](https://code.visualstudio.com/) 
+ - IDEs 
+	 - PyCharm: [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/) 
+	 - Eclipse: [https://www.eclipse.org/](https://www.eclipse.org/)
+
+### Virtual environments / Pipenv / virtualenv
+TODO
+
+## Hola Mundo
+Ya tenemos Python instalado en nuestro sistema, por lo que estamos preparados para comenzar a escribir y ejecutar código Python. Veremos como ejecutar código Python **desde la consola directamente o desde un archivo** de extensión `.py` 
+
+### Consola de Python
+La consola de Python nos **permite ejecutar código directamente**, sin tener que escribir el código previamente ningún fichero. Para entrar en la consola de Python, abre una consola o shell del sistema operativo en el que te encuentres y escribe `py` o `python`:
+
+    python
+    Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+
+Verás cómo el cursor cambia y ahora aparece el símbolo `>>>`. A partir de ahora ya podemos ir ejecutando las instrucciones que queramos. En este caso escribiremos nuestro primer programa, el ya conocido ¡Hola Mundo!
 ```python
-    >>> nombre = input()
-    Leire
-    >>> print(nombre)
-    Leire
+    >>> print("¡Hola Mundo!")
+    ¡Hola Mundo!
+```
+También puedes ejecutar otras instrucciones. Prueba a ejecutar la siguiente operación:
+```python
+    >>> 3*3
+    9
 ```
 
-Como se puede ver en el siguiente ejemplo, es posible pasarle como argumento el mensaje a mostrar al usuario.
+Para salir de la consola de Python, escribe `exit()` o pulsa `CTRL + Z` y `ENTER`.
+
+
+### Ejecutar fichero
+
+También podemos escribir nuestro código en un fichero con extensión `.py` y ejecutarlo. Abre un editor de texto y crea un fichero llamado holamundo.py con el siguiente contenido:
 
 ```python
-    >>> nombre = input("Escribe tu nombre: ")
-    Escribe tu nombre: Leire
-    >>> print(nombre)
-    Leire
+    print("¡Hola Mundo!")
 ```
 
-## Números
-Python soporta dos tipos de números: enteros (integer) y de punto flotante (float)
- 
- ```python
-    # integer
+Para ejecutar el archivo, abre una consola de comandos y escribe lo siguiente:
+
+    python holamundo.py
+
+¡Enhorabuena! Ya has escrito tu primer programa en Python.
+
+## Sintaxis
+
+### Indentación
+
+Un aspecto muy importante a mencionar antes de comenzar a programar en Python es el hecho de que **Python utiliza la indentación** (también conocida como sangría, tabulación o espaciado) para **delimitar los bloques de código**. La indentación estándar de Python requiere una tabulación de 4 espacios:
+
+```python
     x = 5
-    print(x)
-    
-    # float
-    y = 5.0
-    print(y)
-    
-    # Otra forma de declarar un float
-    z = float(5)
-    print(z)
+    if x == 5:
+        # tabulación de 4 espacios
+        print("El valor de x es 5.")
 ```
 
-Si tenemos dudas del valor de una variable, podemos utilizar la función `type()`:
+En caso contrario, al ejecutar nuestro código recibiremos un error como el siguiente
 
-```python
-    >>> x = 5.5
-    >>> type(x)
-    <class 'float'>
-```
+    IndentationError: unindent does not match any outer indentation level
 
-## Cadenas de texto (string)
- Las cadenas de texto o strings se definen mediante comilla simple (`' '`) o doble comilla (`" "`):
+### Comentarios
 
-```python
-    mi_nombre = 'Ane'
-    print(mi_nombre)
-    mi_nombre= "Ane"
-    print(mi_nombre)
-```
+A la hora de programar es posible que queramos introducir en el código comentarios que añadan información extra sin afectar a la ejecución del programa. En Python los comentarios se insertan mediante el carácter hash (#):
 
-La diferencia principal es la mayor facilidad de las comillas dobles para introducir apóstrofes:
+## Funcionamiento de Python
 
-```python
-    mi_nombre = 'I\'m John'
-    print(mi_nombre)
-    mi_nombre= "I'm John"
-    print(mi_nombre)
-```
-
-Más información sobre strings y carácteres especiales en: [https://docs.python.org/3/tutorial/introduction.html#strings](https://docs.python.org/3/tutorial/introduction.html#strings)
-
-Para definir strings multi-línea se utiliza la triples comillas (`"""`):
-
-```python
-frase = """ esto es una
-        frase muy larga de más de
-        una línea ..."""
-```
-
-### Concatenación de strings
-Es posible unir dos strings con el operador `+`:
-
-```python
-    >>> primera_palabra = 'Hola'
-    >>> frase_completa = primera_palabra + ', mundo'
-    >>> print(frase_completa)
-    'Hola, mundo'
-    
-    >>> segunda_palabra = 'mundo'
-    >>> frase_completa = primera_palabra + ', ' + segunda_palabra
-    >>> print(frase_completa)
-    'Hola, mundo'
-```
-
-**Método alternativo 1**: str.join():
-El método `join()` recibe como argumento el listado (de tipo List, Tuple, String, Dictionary y Set) de strings que se desean concatenar. Se invoca sobre el separador (el cual a su vez es un string también):
-
-```python
-    >>> strings = ['do', 're', 'mi']
-    >>> separador = ' - '
-    >>> separador.join(strings)
-    'do - re - mi'
-```
-
-  Para iterar un elemento detrás del otro se introducirá como separador un string vacío:
-
-```python
-    >>> strings = ['do', 're', 'mi']
-    >>> ''.join(strings)
-    'doremi'
-```
-   
-**Método alternativo 2**: `str.format()`:
-Python 3 introdujo una nueva forma para formatear strings, la cual sustituye a la anterior en la que se hace uso del operador `%`. Para ello se invoca el método `format()` de un string:
-
-```python
-    # Ordenado por defecto:
-    frase = "Meses: {}, {} y {}".format('Enero','Febrero','Marzo')
-    print(frase)
-    
-    # Especificar el orden indicando la posición:
-    frase = "Meses: {1}, {0} y {2}".format('Enero','Febrero','Marzo')
-    print(frase)
-    
-    # Especificar el orden mediante parejas clave-valor:
-    orden_palabra = "Meses: {ene}, {feb} y {mar}".format(ene='Enero', feb='Febrero',m='Marzo')
-    print(frase)
-```
-
-### Conversión de tipos
-A la hora de concatenar un string con otras variables como integer o float puede haber problemas:
-
-```python
-    >>> edad = 25
-    >>> nota_media = 7.3
-    >>> print("Tengo " + edad + " años y mi nota media es " + nota_media + ".")
-    
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    TypeError: can only concatenate str (not "int") to str
-```
-
-Mediante la función str() podemos convertir un valor a string:
-
-```python
-    >>> edad = 25
-    >>> nota_media = 7.3
-    >>> print("Tengo " + str(edad) + " años y mi nota media es " + str(nota_media) + ".")
-    Tengo 25 años y mi nota media es 7.3.
-```
-
-De igual manera es posible convertir a otros tipos con las funciones `int()`, `float()` and `bool()`.
-
-### Métodos en cadenas de texto (string)
-
-Es posible **obtener un carácter concreto** de un string utilizando los corchetes `[]`:
-
-```python
-    frase = 'Aprendiendo a programar en Python'
-    course[0] # devuelve el primer caracter
-    course[1] # devuelve el segundo caracter
-    course[-1] # devuelve el primer caracter empezando por el final
-    course[-2] # # devuelve el segundo caracter empezando por el final
-```
-
-Si queremos **obtener un substring**, utilizaremos la siguiente notación:
-
-```python
-    frase = 'Aprendiendo a programar en Python'
-    mi_substring = frase[1:5] # devuelve los caracteres desde la posición 1 hasta la 5 (no incluye el 5)
-```
-
-En caso de dejar la primera variable vacía, se considera la primera posición del string. Dejando la segunda variable vacía se considera la última posición del string:
-
-```python
-    >>> frase = 'Aprendiendo a programar en Python'
-    >>> mi_substring = frase[:5]
-    >>> mi_substring
-    'Apren'
-    >>> mi_substring = frase[4:]
-    >>> mi_substring
-    'ndiendo a programar en Python'
-```
-
-Otros métodos útiles de string:
-
-```python
-    str.upper() # convierte a mayúsculas
-    str.lower() # convierte a minúsculas
-    str.title() # # convierte a mayúsculas la primera letra de cada palabra
-    str.count()
-    
-    str.find(‘d’) # devuelve el índice de la primera aparición de 'd' (o -1 si no lo encuentra)
-    str.replace(‘p’, ‘q’)
-    substr in str # devuelve True si el string contiene el substring
-    str.replace(old, new [, count])   # reemplaza 'old' por 'new'un máximo de 'count' veces.
-    str.isnumeric()   # devuelve True si str contiene solamente números
-```
+TODO
