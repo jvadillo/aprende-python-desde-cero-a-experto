@@ -32,4 +32,4 @@ Toda contribución es más que bienvenida. Puedes contribuir con este libro de l
 
 Este libro esta licenciado como [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES) aunque no necesariamente las imágenes de su interior.
 
-El código incluido en la [carpeta /scripts](https://github.com/UlisesGascon/javascript-inspirate/tree/master/scripts) esta licenciado como [GNU GPL-3.0](https://github.com/UlisesGascon/javascript-inspirate/blob/master/LICENSE)
+El código incluido en la [carpeta /scripts](https://github.com/UlisesGascon/javascript-inspirate/tree/master/scripts) esta licenciado como [GNU GPL-3.0](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/blob/master/LICENSE)
