@@ -1,5 +1,5 @@
 # Aprende Python desde cero a experto :rocket: (Work In Progress :construction:)
-Este es un libro para aprender Python desde cero, pensado tanto para gente sin ninguna experiencia como para aquellos que ya dominan otros lenguajes de programación. Ha sido escrito para aprender de forma ágil y eficiente, centrándose en los aspectos más útiles del lenguaje (sin perder el tiempo es cosas que nunca utilizarás). Mediante pequeñas prácticas y ejemplos irás aprendiendo los fundamentos básicos de Python  hasta llegar a ser un experto en el lenguaje.
+Este es un libro grauito para aprender Python desde cero, pensado tanto para gente sin ninguna experiencia como para aquellos que ya dominan otros lenguajes de programación. Ha sido escrito para aprender de forma ágil y eficiente, centrándose en los aspectos más útiles del lenguaje (sin perder el tiempo es cosas que nunca utilizarás). Mediante pequeñas prácticas y ejemplos irás aprendiendo los fundamentos básicos de Python  hasta llegar a ser un experto en el lenguaje.
 
 ## Conocimientos previos
 El curso no requiere conocimientos previos de ningún tipo ni experiencia en programación, pero en caso de tenerla podrás fortalecer los conocimientos que tienen en común los distintos lenguajes de programación y avanzar más rápido. No te preocupes si es la primera vez que te enfrentas a la programación, el libro está pensado para acompañarte paso a paso y de forma ágil, sin perder el tiempo aprendiendo aspectos irrelevantes del lenguaje.
@@ -20,17 +20,16 @@ El curso comenzará tratando los fundamentos más básicos de Python, adentránd
  11. [Módulos y Paquetes](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/blob/master/11-Modulos-y-Paquetes.md)
  12. Próximos pasos
 
-## ¡Es gratis!
-//TODO
-
-## Comparte el libro
-//TODO
-
-## Feedback
-//TODO
-
 ## Contribuir
-//TODO
+Toda contribución es más que bienvenida. Puedes contribuir con este libro de las siguientes:
+- Ayuda a mejorar el material notificando errores, planteando mejoras o incluso nuevos ejercicios prácticos.
+- Comparte y recomienda este libro o el repositorio en las redes sociales.
+- Recuerda que puedes adquirir este libro por el precio que consideres (¡desde cero euros!)
 
 ## Licencia
-//TODO
+
+![Licencia_img](http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png)
+
+Este libro esta licenciado como [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES) aunque no necesariamente las imágenes de su interior.
+
+El código incluido en la [carpeta /scripts](https://github.com/UlisesGascon/javascript-inspirate/tree/master/scripts) esta licenciado como [GNU GPL-3.0](https://github.com/UlisesGascon/javascript-inspirate/blob/master/LICENSE)
