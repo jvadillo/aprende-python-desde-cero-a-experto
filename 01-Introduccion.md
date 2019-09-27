@@ -51,7 +51,7 @@ La instalación para Mac es sencilla y directa. Simplemente descarga la última 
 
 ## Entorno de desarrollo
 ### Editores de código
-Para programar en Python es suficiente con tener un editor de texto cualquiera, aunque hoy en día es recomendable utilizar un editor avanzado o un IDE que permita programar de forma ágil. Algunas de las opciones más recomendadas son:
+Para programar en Python **es suficiente con tener un editor de texto cualquiera**, aunque hoy en día es recomendable utilizar un editor avanzado o un IDE que permita programar de forma ágil. Algunas de las opciones más recomendadas son:
 
  - Editores de texto 
 	 - Atom: [https://atom.io/](https://atom.io/) 
@@ -122,7 +122,12 @@ En caso contrario, al ejecutar nuestro código recibiremos un error como el sigu
 
 ### Comentarios
 
-A la hora de programar es posible que queramos introducir en el código comentarios que añadan información extra sin afectar a la ejecución del programa. En Python los comentarios se insertan mediante el carácter hash (#):
+A la hora de programar es posible que queramos introducir en el código comentarios que añadan información extra sin afectar a la ejecución del programa. En Python los comentarios se insertan mediante el carácter hash (`#`):
+
+```python
+    # Mi primer comentario
+    x = 5 # Un comentario junto con el código
+```
 
 ## Funcionamiento de Python
 
