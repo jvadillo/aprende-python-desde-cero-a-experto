@@ -8,14 +8,25 @@ Python es uno de los lenguajes de programación más populares. En comparación 
 
 ## Características principales
 Se trata de un lenguaje **open source** en el que destaca su legibilidad. El código es limpio y ordenado, lo cual lo convierte en un lenguaje fácil de leer y escribir, en definitiva:  **fácil de entender y aprender**. 
+
 Al contrario que otros lenguajes de programación, **Python es un lenguaje interpretado**, lo que significa que no es necesario compilar el código de Python antes de ejecutarlo. El intérprete irá ejecutando el código línea por línea. 
 
-Otra de las principales características de Python es que es que es un lenguaje de programación **dinámicamente tipado**, es decir, el programador no tiene que declarar el tipo de las variables si no que se decide automáticamente en el tiempo de ejecución.
+Otra de las principales características de Python es que es que **es un lenguaje de programación dinámicamente tipado**, es decir, el programador no tiene que declarar el tipo de las variables si no que se decide automáticamente en el tiempo de ejecución.
 
-Por último, comentar que una de las mayores ventajas de este lenguaje de programación **orientado a objetos** es la extensa variedad de **liberías y frameworks** disponibles para cualquier propósito, lo cual hace que Python sea la opción perfecta para aplicaciones de todo tipo.
+```python
+# La variable "edad" guarda el valor como integer
+edad = 25
+print("La variable 'edad' es de tipo: " + str(type(edad)))
+# Ahora "edad" guarda un string
+edad = "Tengo 25 años"
+print("La variable 'edad' es de tipo: " + str(type(edad)))
+
+```
+
+Por último, comentar que una de las mayores ventajas de este **lenguaje de programación orientado a objetos** es la extensa variedad de **liberías y frameworks** disponibles para cualquier propósito, lo cual hace que Python sea la opción perfecta para aplicaciones de todo tipo.
 
 ## Instalación de Python
-Python es un lenguaje multiplataforma, lo cual significa que podemos trabajar con Python tanto en Windows, Mac o Linux. A pesar de que todavía encontrarás código escrito en Python 2, en la actualidad la versión recomenda es Python 3.
+Python es un **lenguaje multiplataforma**, lo cual significa que podemos trabajar con Python tanto en Windows, Mac o Linux. A pesar de que todavía encontrarás código escrito en Python 2, en la actualidad **la versión recomendada es Python 3**.
 
 ### Instalar Python en Windows
 Estos son los pasos para instalar Python en Windows:
@@ -50,8 +61,8 @@ Para programar en Python es suficiente con tener un editor de texto cualquiera, 
 	 - PyCharm: [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/) 
 	 - Eclipse: [https://www.eclipse.org/](https://www.eclipse.org/)
 
-### Virtual environments / Pipenv / virtualenv
-TODO
+### Entorno de desarrollo avanzado
+Más adelante, una vez conozcas los fundamentos del lenguaje y tengas fluidez a la hora de programar, podrás consultar el capítulo "Entornos Virtuales" donde te explicaremos como configurar tu entorno de desarrollo de forma más avanzada. Mientras tanto, te recomiendo que continúes paso a paso y en orden por el resto de lecciones.
 
 ## Hola Mundo
 Ya tenemos Python instalado en nuestro sistema, por lo que estamos preparados para comenzar a escribir y ejecutar código Python. Veremos como ejecutar código Python **desde la consola directamente o desde un archivo** de extensión `.py` 
@@ -115,4 +126,9 @@ A la hora de programar es posible que queramos introducir en el código comentar
 
 ## Funcionamiento de Python
 
-TODO
+Python ejecuta nuestro código línea por línea. Por cada línea de código estas son las acciones que se realizan: 
+
+ 1. **Analizar (*parse* en inglés) el código** comprobando que formato y la sintaxis es correcta, es decir, que cumplen las normas establecidas para el lenguaje de progamación.
+ 2. **Traducir el código a bytecode** (instrucciones que nuestra máquina puede ejecutar).
+ 3. **Enviar el código para su ejecución** a la Python Virtual Machine(PVM), donde el código es ejecutado.
+
