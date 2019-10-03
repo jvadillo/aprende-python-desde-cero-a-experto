@@ -1,16 +1,18 @@
 # Variables y Tipos de datos
-Las variables permiten almacenar datos del programa. Las variables será de un tipo u otro en función de la información que se guarde en ellas. El nombre de una variable se conoce como **identificador**, y deberá cumplir las siguientes reglas:
+Las variables permiten **almacenar datos del programa**. Las variables será de un tipo u otro en función de la información que se guarde en ellas. El nombre de una variable se conoce como **identificador**, y deberá cumplir las siguientes reglas:
 
- - Comenzar con una letra o un guión bajo
- - El resto de nombre estará formado por letras, números o guiones bajos.
- - Los nombres de las variables son case sensitive, es decir, no es lo mismo que una variable se llame `resultado` que `RESULTADO`.
- - Existe una serie de palabras reservadas que no se pueden utilizar (def, global, return, if, for, ...).
+ - Comenzar con una letra o un guión bajo.
+ - El resto del nombre estará formado por letras, números o guiones bajos.
+ - Los nombres de las variables son *case sensitive*, es decir, no es lo mismo que una variable se llame `resultado` que `RESULTADO`.
+ - Existen una serie de palabras reservadas que no se pueden utilizar (def, global, return, if, for, ...).
 
-Existen algunas recomendaciones respecto a los nombres de las variables, recogidas en la [guía de estilo PEP8 de Python](https://www.python.org/dev/peps/pep-0008/):
+Algunas de las recomendaciones respecto a los nombres de las variables están recogidas en la [Guía oficial de Estilos PEP8 de Python](https://www.python.org/dev/peps/pep-0008/). Entre las más habituales encontramos las siguientes:
 
  - Utilizar nombres descriptivos, en minúsculas y separados por guiones bajos si fuese necesario: `resultado`, `mi_variable`, `valor_anterior`,...
  - Escribir las constantes en mayúsculas: `MI_CONSTANTE`, `NUMERO_PI`, ...
  - Antes y después del signo `=`, debe haber uno (y solo un) espacio en blanco.
+
+__Nota__: No olvides que lo que la guía plantea son recomendaciones y no obligaciones. Por ejemplo, mientras PEP8 recomienda tabular el código con 4 espacioes en blanco, la guía particular de los desarrolladores de Google habla de 2 espacios en lugar de 4.
 
 ## Resumen de tipos de variables
 
@@ -23,7 +25,7 @@ Existen algunas recomendaciones respecto a los nombres de las variables, recogid
 
 ## Lectura de datos en Python
 
-La función input() permite introducir datos al usuario:
+La función `input()` permite introducir datos al usuario:
 
 ```python
     >>> nombre = input()
@@ -32,14 +34,27 @@ La función input() permite introducir datos al usuario:
     Leire
 ```
 
-Como se puede ver en el siguiente ejemplo, es posible pasarle como argumento el mensaje a mostrar al usuario.
+Como se puede ver en el siguiente ejemplo, es posible pasar como argumento el mensaje a mostrar al usuario.
 
 ```python
     >>> nombre = input("Escribe tu nombre: ")
     Escribe tu nombre: Leire
     >>> print(nombre)
-    Leire
-```
+    Lei
+ ``
+## inn! 
+ ricio 1
+Crrograma que contenga las siguientes variables:
+
+ - nombre: tipo string y valor "Kobe Bryant"
+ - edad: tipo integer y valor 45
+ - media_puntos: tipo float y valor 28.5
+ - activo: False
+
+El programa deberá mostrar en pantalla todos los valores.
+
+ rciio  programa que solicite el nombre, DNI y edad, lo almacene en 3 variables distintas y muestre por pantalla los valores introducidos.
+
 
 ## Números
 Python soporta dos tipos de números: enteros (integer) y de punto flotante (float)
@@ -205,12 +220,32 @@ Otros métodos útiles de string:
 ```python
     str.upper() # convierte a mayúsculas
     str.lower() # convierte a minúsculas
-    str.title() # # convierte a mayúsculas la primera letra de cada palabra
-    str.count()
-    
+    str.title() # convierte a mayúsculas la primera letra de cada palabra
+    str.count(substring [, inicio, fin]) # devuelve el número de veces que aparece el substring en el string. Opcionalmente se puede indicar el inicio y fin. 
     str.find(‘d’) # devuelve el índice de la primera aparición de 'd' (o -1 si no lo encuentra)
-    str.replace(‘p’, ‘q’)
     substr in str # devuelve True si el string contiene el substring
-    str.replace(old, new [, count])   # reemplaza 'old' por 'new'un máximo de 'count' veces.
+    str.replace(old, new [, count])   # reemplaza 'old' por 'new'un máximo de 'count' veces (opcional).
     str.isnumeric()   # devuelve True si str contiene solamente números
 ```
+
+## 👩‍💻 Coding time! 👨‍💻
+### Ejercicio 1
+Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los último 3 caracteres de un string introducido por el usuario.  
+Ejemplo 1 : 'aprendiendo'  
+Resultado : 'aprndo'  
+Ejemplo 2 : 'escribiendo código'  
+Resultado : 'escigo' 
+
+### Ejercicio 2
+Escribe un programa que solicite al usuario dos números y una frase. El primer número introducido se corresponderá a la posición de inicio del substring que deberá mostrar el programa por pantalla. El segundo número indicará la longitud de dicho substring.
+ 
+- Ejemplo 1 : 4, 8, 'Desarrollar es mi nueva afición'  
+- Resultado : ''rollar es"  
+- Ejemplo 2 : '11, 8, Bienvenido a la clase de programación'  
+- Resultado : 'a la cla' 
+
+### Ejercicio 3
+Escribe un programa que solicite al usuario una frase. A continuación le solicitará la letra que quiere reemplazar y por qué letra deberá reemplazarse. Por último el programa mostrará el número de veces que la letra está presente en la frase y el resultado final tras reemplazarla.
+ 
+- Ejemplo 1 : 'Desarrollar es mi nuevo pasatiempos', 'a','e'
+- Resultado : 4 apariciones. 'Deserroller es mi nueve pesetiempos'  
