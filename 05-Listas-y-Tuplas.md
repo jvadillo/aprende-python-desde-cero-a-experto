@@ -1,65 +1,95 @@
-# Listas y tuplas
-Las listas permiten **guardar más de un elemento** dentro de una variable en un orden concreto. Pueden contener un número **ilimitado** de variables de **cualquier tipo**:
+# Diccionarios
+Un diccionario es un conjunto de parejas **clave- valor** (key-value). Es decir, se accede a cada elemento a partir de su clave. Se definen de la siguiente manera:
 
 ```python
-    alumnos = ["Ane", "Unai", "Itziar", "Mikel"]
-    print(alumnos [0]) # muestra "Ane"
-    print(alumnos [1]) # muestra "Unai"
-    print(alumnos [2]) # muestra "Itziar"
-    print(alumnos [-1]) # muestra "Mikel"
+    estudiante = {
+    	"nombre": "Iñaki Perurena",
+    	"edad": 30,
+    	"nota_media": 7.25,
+    	"repetidor" : False
+    }
 ```
 
-Los **métodos más utilizados** con las listas son los siguientes:
+Las **claves tienen que ser únicas** y estar formadas por un **string o un número**. Para acceder al valor de una clave exiten dos maneras distintas:
+
+```python
+    edad = estudiante["edad"] # devuelve el valor de 'edad'
+    nota_media = estudiante.get("nota_media") # devuelve el valor de 'nota_media'
+    
+    estudiante["edad"] = 25 # actualiza el valor de 'edad'
+    estudiante["suspensos"] = 3 # inserta una nueva pareja clave - valor
+    estudiante.update({'aprobados':'8'}): inserta una nueva pareja clave - valor o actualiza su valor si ya existiera
+```
+
+Algunos de los métodos más utilizados son los siguientes:
+
 | Método | Acción |
 |--|--|
-| `alumnos.append("Amaia")` | Inserta "Jon" al final de la lista |
-| `alumnos.insert(0,"Amaia")` | Inserta "Amaia" en la posición 0 |
-| `alumnos.remove("Amaia")` | Elimina la primera aparición de "Amaia" de la lista |
-| `alumnos.pop()` | Elimina el último elemento de la lista |
-| `alumnos.clear()` | Elimina todos los elementos de la lista |
-| `alumnos.index("Amaia")` | Devuelve el índice de la primera aparición de "Amaia" |
-| `alumnos.sort()` | Ordena la lista (los elementos deben ser comparables) |
-| `sorted(alumnos)` | Devuelve una copia de la lista 'alumnos' ordenada (no ordena la pasada como parámetro)  |
-| `alumnos.reverse()` | Ordena la lista en orden inverso |
-| `alumnos.copy()` | Devuelve una copia de la lista |
-| `alumnos.extend(otra_lista)` | Fusiona las dos listas |
+| `diccionario.keys()` | Devuelve todas las claves del diccionario |
+| `diccionario.values()` | Devuelve todos los valores del diccionario |
+| `diccionario.pop(clave[,<default>])` | Elimina la clave del diccionario y devuelve su valor asociado. Si no la encuentra y se indica un valor por defecto, devuelve el valor por defecto indicado. |
+| `diccionario.clear()` | Vacía el diccionario |
+| `diccionario.clear()` | Vacía el diccionario |
+| `clave in diccionario` | Devuelve True si el diccionario contiene la clave o False en caso contrario. |
+| `valor in diccionario.values()` | Devuelve True si el diccionario contiene el valor o False en caso contrario. |
 
-### Recorrer una lista
-TODO
+## Recorrer un diccionario
+//TODO
 
-## Tuplas
-Las tuplas son **listas inmutables**. Es decir, una vez declaradas, no se pueden realizar modificaciones sobre ellas (añadir/eliminar elementos o hacer modificaciones sobre ellos). Para definir una tupla se escriben los elementos entre paréntesis:
-
-```python
-    valores = (1,2,3)
-```
-El acceso a sus elementos se hace de igual que con listas:
-
-```python
-    valores = ("a", "b", "c","d","e","f")  
-    print(valores[1])
-    print(valores[2:4])
-```
-
-Una acción típica de las tuplas es "desempaquetar" (unpack) sus valores:
-
-```python
-    a, b, c = valores 
-```
 
 ## 👩‍💻Coding time! 👨‍💻
 ### Ejercicio 1
-Dada la siguiente lista `[12, 23, 5, 29, 92, 64]` realiza las siguientes operaciones y vete mostrando la lista resultante por pantalla:
-1. Elimina el último número y añádelo al principio.
-2. Mueve el segundo elemento a la última posición.
-3. Añade el número `14` al comienzo de la lista.
-4. Suma todos los números de la lista y añade el resultado al final de la lista.
-5. Comina la lista actual con la siguiente: `[4, 11, 32]`
-6. Elimina todos los números impares de la lista.
-7. Ordena los números de la lista de forma ascendente.
-8. Vacía la lista.
+Crea un programa que recorra una lista y cree un diccionario que contenga el número de veces que aparece cada número en la lista.
+- Ejemplo: `[12, 23, 5, 12, 92, 5,12, 5, 29, 92, 64,23]`
+- Resultado: `{12: 3, 23: 2, 5: 3, 92: 2, 29: 1, 64: 1}`
 
 ### Ejercicio 2
-Crea un programa que solicite al usuario 5 números y los guarde en una lista. A continuación el programa pedirá otros 5 números al usuario almacenándolos en una segunda lista. El programa mostrará al usuario una lista que contenga los números que tienen en común las dos listas anteriores.
-- Ejemplo: Lista 1 = `[6,14,11,78,5]` y Lista 2 = `[3,14,22,78,9]`
-- Resultado: `[14, 78]`
+Recorre un diccionario y crea una lista solo con los valores que contiene, sin añadir valores duplicados.
+Ejemplo: `{'Mikel': 3, 'Ane': 8, 'Amaia': 12, 'Unai': 5, 'Jon': 8, 'Ainhoa': 7, 'Maite': 5}`
+Resultado: `[3, 8, 12, 5, 7]`
+
+### Ejercicio 3
+Crea una programa de Login que compruebe el usuario y contraseña en el diccionario a continuación:
+
+```python
+usuarios = {  
+      "iperurena": {  
+          "nombre": "Iñaki",  
+		  "apellido": "Perurena",  
+		  "password": "123123"  
+	  },  
+	  "fmuguruza": {  
+	       "nombre": "Fermín",  
+		  "apellido": "Muguruza",  
+		  "password": "654321"  
+	  },  
+	  "aolaizola": {  
+	       "nombre": "Aimar",  
+		  "apellido": "Olaizola",  
+		  "password": "123456"  
+	  }  
+    }
+```
+
+El usuario tendrá un máximo de 3 intentos, y al acceder correctamente se mostrará el nombre y apellido del usuario.
+
+### Ejercicio 4
+Crea un programa que permita introducir a un profesor las notas de sus estudiantes (máximo 10 estudiantes). Los datos se deberán almacenar en un diccionario como el siguiente:
+
+```python
+estudiantes = {  
+   "1": {  
+	  "nombre": "Lorea",  
+	  "nota": 8  
+  },  
+  "2": {  
+      "nombre": "Markel",  
+	  "nota": "4.2"  
+  },  
+  "3": {  
+      "nombre": "Julen",  
+	  "nota": 6.5  
+  }  
+}
+```
+Una vez introducidos todos los datos, el programa mostrará una lista con los nombres de los estudiantes que han suspendido y otra con los que han aprobado. También calculará y mostrará la nota media de la clase.
