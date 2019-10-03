@@ -3,7 +3,7 @@
 ## Condicionales
 Las estructuras de control se utilizan para **ejecutar bloques de código en función de condiciones**.
 
-### Sentencia IFif..else
+### Sentencia IF - ELSE
 Si se cumple la condición especificada en el `if`IF, se ejecutará el bloque indentado. En caso de que el resultado de la condición sea `False`, no se ejecutará:
 
 ```python
@@ -193,3 +193,35 @@ Para iterar por una lista utilizando el índice, basta con combinarlo con la fun
     for i in range(len(alumnos)):
     	print(alumnos[i])
 ```
+
+## 👩‍💻Coding time! 👨‍💻
+### Ejercicio 1
+Crea un programa que solicite un número al usuario y devuelva el siguiente mensaje:
+- Si es mayor que 0: "Es un número positivo."
+- Si es igual a 0: "Es igual a cero.
+- Si es menor que 0: "Es un número negativo."
+
+### Ejercicio 2
+Crea un programa que solicite dos números al usuario y muestre por pantalla la suma de todos los números que hay entre los dos números (ambos incluidos).
+Ejemplo: 4, 8
+Resultado: 30
+
+### Ejercicio 3
+Mejora el programa anterior para que muestre por separado la suma de los números pares y los impares.
+Ejemplo: 4, 8
+Resultado: Pares = 18, Impares = 12, Total = 30
+
+### Ejercicio 4
+Escribe un programa que solicite al usuario un nombre de usuario y contraseña. El programa mostrará el mensaje "¡Bienvenido!" si el usuario introduce los siguientes datos:
+- Nombre de usuario: root
+- Contraseña: toor
+
+Si los datos de acceso son incorrectos mostrará el mensaje "Acceso fallido" y el programa finalizará.
+### Ejercicio 5
+Mejora el programa anterior para que permita 3 intentos. Cada vez vez que el usuario introduzca datos de acceso incorrectos el programa mostrará el mensaje: "Datos incorrectos. Le quedan X intentos.", siendo X el número de intentos restantes. Tras el tercer fallo el programa mostrará el mensaje "Acceso fallido" y finalizará.
+
+### Ejercicio 6
+Crea un programa que reciba 5 números del usuario y muestre el mayor de todos por pantalla.
+
+### Ejercicio 7
+Mejora el programa anterior, de forma que el usuario pueda introducir tantos números como quiera. El programa solicitará números al usuario hasta que introduzca la palabra "fin". Entonces mostrará el mayor de todos por pantalla.
