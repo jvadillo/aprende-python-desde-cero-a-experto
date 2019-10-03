@@ -43,3 +43,14 @@ Los operadores lógicos `and` `or`, or y `not`.
 | and   | a and b     | True si a y b son True    |
 | or   | a or b     | True si a o b son true|
 | not   | not b     | True si b es falso|
+
+
+## 👩‍💻Coding time! 👨‍💻
+### Ejercicio 1
+Crea un programa que solicite al usuario un número y muestre por pantalla la tabla de multiplicación del 1 al 10.
+
+### Ejercicio 2
+Crea un programa que solicite al usuario dos números y muestre por pantalla el resultado de las siguientes operaciones: suma, resta, multiplicación y división.
+
+### Ejercicio 3
+Crea un programa que solicite al usuario el radio de un círculo y calcule el área.
