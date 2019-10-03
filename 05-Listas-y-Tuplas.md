@@ -46,3 +46,20 @@ Una acción típica de las tuplas es "desempaquetar" (unpack) sus valores:
 ```python
     a, b, c = valores 
 ```
+
+## 👩‍💻Coding time! 👨‍💻
+### Ejercicio 1
+Dada la siguiente lista `[12, 23, 5, 29, 92, 64]` realiza las siguientes operaciones y vete mostrando la lista resultante por pantalla:
+1. Elimina el último número y añádelo al principio.
+2. Mueve el segundo elemento a la última posición.
+3. Añade el número `14` al comienzo de la lista.
+4. Suma todos los números de la lista y añade el resultado al final de la lista.
+5. Comina la lista actual con la siguiente: `[4, 11, 32]`
+6. Elimina todos los números impares de la lista.
+7. Ordena los números de la lista de forma ascendente.
+8. Vacía la lista.
+
+### Ejercicio 2
+Crea un programa que solicite al usuario 5 números y los guarde en una lista. A continuación el programa pedirá otros 5 números al usuario almacenándolos en una segunda lista. El programa mostrará al usuario una lista que contenga los números que tienen en común las dos listas anteriores.
+- Ejemplo: Lista 1 = `[6,14,11,78,5]` y Lista 2 = `[3,14,22,78,9]`
+- Resultado: `[14, 78]`
