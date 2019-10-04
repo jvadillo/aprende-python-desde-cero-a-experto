@@ -94,3 +94,56 @@ class Persona:
         self._nombre = nombre  # atributo protected 
         self.__edad = edad # atributo private
 ```
+
+## 👩‍💻Coding time! 👨‍💻
+
+### Ejercicio 1
+Crea la clase Coche que contenga las siguientes propiedades:
+
+ - `matrícula` (string)
+ - `marca` (string)
+ - `kilometros_recorridos` (float)
+ - `gasolina` (float)
+
+La clase tendrá un método llamado `avanzar()` que recibirá como argumento el número de kilómetros a conducir y sumará los kilómetros recorridos al valor de la propiedad `kilometros_recorridos`. El método también restará al valor de `gasolina` el resultado de los kilómetros multiplicado por 0'1.
+La clase también contendrá otro método llamado `repostar()` que recibirá como argumento los litros introducidos que deberán sumarse a la variable `gasolina`.
+Por último, será necesario controlar que el método avanzar nunca obtendrá un número negativo en la gasolina. En dicho caso, deberá mostrar el siguiente mensaje: "Es necesario repostar para recorrer la cantidad indicada de kilómetros".
+
+Ejemplo:
+
+ - `repostar(50)` # gasolina = 50
+ - `recorrer(100)` # kilometros_recorridos = 100, gasolina = 40
+ - `recorrer(40)` # kilometros_recorridos = 140, gasolina = 36
+ - `recorrer(180)` # kilometros_recorridos = 320, gasolina = 18
+
+### Ejercicio 2
+Crea una clase Robot que simule los movimientos de un robot y calcule la posición en la que se encuentra cada momento. El robot se moverá por un tablero infinito de coordenadas X e Y, podrá realizar los siguientes movimientos:
+- Avanzar hacia adelante (A)
+- Retroceder (R)
+- Avanzar hacia la izquierda (I) o hacia la derecha (D)
+
+El robot tendrá un método llamado `mueve()` que recibirá la orden como parámetro y otro método, `posicion_actual()`,  que indicará su posición en las coordenadas X e Y. Al crear el robot este se inicializará a las coordenadas (0,0).
+
+Ejemplo:
+- mueve("A") # (1,0)
+- mueve("A") # (2,0)
+- mueve("I") # (2,-1)
+- mueve("A") # (3,-1)
+- mueve("D") # (3,0)
+- mueve("D") # (3,1)
+- mueve("D") # (3,2)
+- mueve("R") # (2,2)
+- mueve("I") # (2,1)
+
+### Ejercicio 3
+Mejora el ejercicio anterior de forma que el robot pueda recibir una secuencia de movimientos.
+Ejemplo:
+- mueve("AADDADIR") # (2,2)
+
+También deberá tener otros dos métodos: uno que devuelva todas las órdenes recibidas y otro capaz de listar los movimientos necesarios para volver a la posición inicial (0,0).
+
+### Ejercicio 4
+Crea la clase Triangulo que almacene la longitud de cada uno de sus lados. Deberá contener los siguientes métodos:
+- `area()`: devuelve el área del triángulo
+- `forma()`: indica si se trata de un triángulo equilátero, isósceles o irregular.
+- `perímetro()`: devuelve el perímetro del triángulo.
