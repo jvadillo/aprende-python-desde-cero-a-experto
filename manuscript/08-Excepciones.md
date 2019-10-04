@@ -74,9 +74,9 @@ Traceback (most recent call last):
 File "<pyshell#15>", line 1, in <module>  
 diccionario['4']  
 KeyError: '4'
-````
+```
 
-**ModuleNotFoundError**  es lanzado cuando no se encuentra el módulo indicado.
+**ModuleNotFoundError** es lanzado cuando no se encuentra el módulo indicado.
 ```
 >>> import mimodulo  
 Traceback (most recent call last):  

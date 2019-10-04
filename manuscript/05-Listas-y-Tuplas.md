@@ -26,7 +26,23 @@ Los **métodos más utilizados** con las listas son los siguientes:
 | `alumnos.extend(otra_lista)` | Fusiona las dos listas |
 
 ### Recorrer una lista
-TODO
+La forma habitual de recorrer una lista es mediante la sentencia `for`, tal y como muestra el ejemplo a continuación:
+
+```python
+    for elemento in ['Python','JavaScript','JAVA']:
+        print("Programo en ", elemento)
+```
+De igual manera se podría hacer mediante la sentencia `while`:
+
+```python
+    lista =  ['Python','JavaScript','JAVA']
+    i = 0
+    sizeofList = len(lista) 
+    while i < sizeofList :
+        print(lista[i]) 
+        i += 1
+```
+
 
 ## Tuplas
 Las tuplas son **listas inmutables**. Es decir, una vez declaradas, no se pueden realizar modificaciones sobre ellas (añadir/eliminar elementos o hacer modificaciones sobre ellos). Para definir una tupla se escriben los elementos entre paréntesis:
@@ -49,6 +65,7 @@ Una acción típica de las tuplas es "desempaquetar" (unpack) sus valores:
 ```
 
 ## Coding time!
+
 ### Ejercicio 1
 Dada la siguiente lista `[12, 23, 5, 29, 92, 64]` realiza las siguientes operaciones y vete mostrando la lista resultante por pantalla:
 1. Elimina el último número y añádelo al principio.

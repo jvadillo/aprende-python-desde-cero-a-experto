@@ -1,6 +1,7 @@
 
 
 # Módulos y Paquetes
+
 ## Módulos
 Un módulo es un archivo de Python que contiene variables, funciones y clases. Es una forma de ordenar y reutilizar código ya que todo el contenido de un módulo es accesible por los archivos que lo importen.
 

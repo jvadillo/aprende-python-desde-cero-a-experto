@@ -228,7 +228,7 @@ Otros métodos útiles de string:
     str.isnumeric()   # devuelve True si str contiene solamente números
 ```
 
-## 👩‍💻 Coding time! 👨‍💻
+## Coding time!
 ### Ejercicio 1
 Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los último 3 caracteres de un string introducido por el usuario.  
 Ejemplo 1 : 'aprendiendo'  

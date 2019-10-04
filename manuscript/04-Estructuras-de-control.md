@@ -195,6 +195,7 @@ Para iterar por una lista utilizando el índice, basta con combinarlo con la fun
 ```
 
 ## Coding time!
+
 ### Ejercicio 1
 Crea un programa que solicite un número al usuario y devuelva el siguiente mensaje:
 - Si es mayor que 0: "Es un número positivo."

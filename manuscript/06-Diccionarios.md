@@ -1,4 +1,5 @@
 # Diccionarios
+
 Un diccionario es un conjunto de parejas **clave- valor** (key-value). Es decir, se accede a cada elemento a partir de su clave. Se definen de la siguiente manera:
 
 ```python
@@ -92,6 +93,7 @@ edades.pop("Aitor")
 ```
 
 ## Coding time!
+
 ### Ejercicio 1
 Crea un programa que recorra una lista y cree un diccionario que contenga el número de veces que aparece cada número en la lista.
 - Ejemplo: `[12, 23, 5, 12, 92, 5,12, 5, 29, 92, 64,23]`
