@@ -1,10 +1,9 @@
-
 # Estructuras de control
 ## Condicionales
 Las estructuras de control se utilizan para **ejecutar bloques de código en función de condiciones**.
 
 ### Sentencia IF - ELSE
-Si se cumple la condición especificada en el `if`IF, se ejecutará el bloque indentado. En caso de que el resultado de la condición sea `False`, no se ejecutará:
+Se evalúa la condición especificada en la sentencia `if` y en caso de cumplirse se ejecutará el bloque de código indentado. En caso de que el resultado de la condición sea `False`, no el bloque especificado no se ejecutará:
 
 ```python
     numero = 5
@@ -194,7 +193,7 @@ Para iterar por una lista utilizando el índice, basta con combinarlo con la fun
     	print(alumnos[i])
 ```
 
-## 👩‍💻Coding time! 👨‍💻
+## Coding time!
 ### Ejercicio 1
 Crea un programa que solicite un número al usuario y devuelva el siguiente mensaje:
 - Si es mayor que 0: "Es un número positivo."

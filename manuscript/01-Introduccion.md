@@ -1,4 +1,3 @@
-
 # Introducción
 Python es uno de los lenguajes de programación más populares. En comparación a otros lenguajes de programación, Python tiene una **curva de aprendizaje pequeña y un gran potencial** realizar tareas de todo tipo, como por ejemplo:
  - Desarrollo de aplicaciones web
