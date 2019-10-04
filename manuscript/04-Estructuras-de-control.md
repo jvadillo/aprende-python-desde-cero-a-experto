@@ -98,66 +98,66 @@ La salida del programa anterior será la siguiente:
 Para ejecutar un código al finalizar, es decir, cuando la condición es `False` y no se ha finalizado con `break`, se utiliza la expresión `else`:
 
 ```python
-    count = 0
-    while(count < 5):
-    	count = count+1
-    	print("Iteración número {}".format(count))
-    else:
-	print ("Bucle while finalizado")
+count = 0
+while(count < 5):
+    count = count+1
+    print("Iteración número {}".format(count))
+else:
+    print("Bucle while finalizado")
  ```   
 
 ### Sentencia FOR
 A diferencia de otros lenguajes de programación, en Python la sentencia FOR itera únicamente por secuencias (listas, tuplas, cadenas de caracteres,...).
 
 ```python
-    alumnos = ["Ane", "Mikel", "Unai", "Lorea"]
-    for alumno in alumnos:
-    	print(alumno)
+alumnos = ["Ane", "Mikel", "Unai", "Lorea"]
+for alumno in alumnos:
+    print(alumno)
 ```
 
 También es posible utilizarlo para recorrer un string:
 
 ```python
-    frase = "Aprendiendo Python"
-    for c in frase:
-    	print(c)
+frase = "Aprendiendo Python"
+for c in frase:
+    print(c)
 ```
 
 Para detener una ejecución se utiliza la sentencia `break`:
 
 ```python
-    numeros = [4,8,2,7,1,9,3,5]
-    total = 0
-    
-    for n in numeros:
-    	total += n
-    	if total > 10
-    		break
+numeros = [4,8,2,7,1,9,3,5]
+total = 0
+
+for n in numeros:
+    total += n
+    if total > 10
+        break
 ```
 
 También es posible saltar únicamente la iteración actual mediante la sentencia `continue`:
 
 ```python
-    numeros = [4,8,2,7,1,9,3,5]
-    total = 0
-    
-    # solo sumar los números impares
-    for num in numeros:
-    	if num % 2 == 0:
-    		print("Numero par, no lo sumamos")
-    		continue
-    	total += n
+numeros = [4,8,2,7,1,9,3,5]
+total = 0
+
+# solo sumar los números impares
+for num in numeros:
+    if num % 2 == 0:
+        print("Numero par, no lo sumamos")
+        continue
+    total += n
 ```
 
 #### Bucle FOR con ELSE
 Python permite definir un bloque de código a ejecutar cuando la iteración por los elementos de una lista finaliza. Es importante mencionar que no se ejecutará si se ha finalizado mediante `break`.
 
 ```python
-    alumnos = ["Ane", "Mikel", "Unai", "Lorea"]
-    for alumno in alumnos:
-    	print(alumno)
-	else:
-		print("No quedan más alumnos.")
+alumnos = ["Ane", "Mikel", "Unai", "Lorea"]
+for alumno in alumnos:
+    print(alumno)
+else:
+    print("No quedan más alumnos.")
 ```
 
 #### La función range()
@@ -218,6 +218,7 @@ Escribe un programa que solicite al usuario un nombre de usuario y contraseña. 
 - Contraseña: toor
 
 Si los datos de acceso son incorrectos mostrará el mensaje "Acceso fallido" y el programa finalizará.
+
 ### Ejercicio 5
 Mejora el programa anterior para que permita 3 intentos. Cada vez vez que el usuario introduzca datos de acceso incorrectos el programa mostrará el mensaje: "Datos incorrectos. Le quedan X intentos.", siendo X el número de intentos restantes. Tras el tercer fallo el programa mostrará el mensaje "Acceso fallido" y finalizará.
 

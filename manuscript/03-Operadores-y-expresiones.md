@@ -18,6 +18,15 @@ Los operadores aritméticos se utilizan para realizar operaciones matemáticas (
 
 Ejemplos:
 
+```python
+x= 5	
+y= 2
+print(x + y) # 7
+print(x - y) # 3
+print(x * y) # 10
+print(x / y) # 2.5
+```
+
 
 ## Operadores relacionales o de comparación
 
@@ -32,7 +41,6 @@ Los operadores relacionales se utilizan para comparar valores y devuelven como r
 | >=   | a >= b     | Mayor o igual: `True` si a es igual o mayor que b    |
 | <=   | a >= b     | Menor o igual: `True` si a es igual o menor que b|
 
-Ejemplos:
 
 ## Operadores lógicos
 Los operadores lógicos `and` `or`, or y `not`.
@@ -45,7 +53,9 @@ Los operadores lógicos `and` `or`, or y `not`.
 
 
 ## Coding time!
+
 ### Ejercicio 1
+
 Crea un programa que solicite al usuario un número y muestre por pantalla la tabla de multiplicación del 1 al 10.
 
 ### Ejercicio 2

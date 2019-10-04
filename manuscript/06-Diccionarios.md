@@ -72,7 +72,9 @@ for key, value in diccionario.items():
 # El valor de b is 2
 # El valor de c is 3
 ```
+
 ## Borrar un elemento
+
 Para borrar un elemento de un diccionario se utiliza la instrucción `del`.
 ```python
 edades = {
