@@ -232,21 +232,21 @@ Otros métodos útiles de string:
 
 ### Ejercicio 1
 Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los último 3 caracteres de un string introducido por el usuario.  
-Ejemplo 1 : 'aprendiendo'  
-Resultado : 'aprndo'  
-Ejemplo 2 : 'escribiendo código'  
-Resultado : 'escigo' 
+- Ejemplo 1: 'aprendiendo'  
+- Resultado 1: 'aprndo'  
+- Ejemplo 2: 'escribiendo código'  
+- Resultado 2: 'escigo' 
 
 ### Ejercicio 2
 Escribe un programa que solicite al usuario dos números y una frase. El primer número introducido se corresponderá a la posición de inicio del substring que deberá mostrar el programa por pantalla. El segundo número indicará la longitud de dicho substring.
  
-- Ejemplo 1 : 4, 8, 'Desarrollar es mi nueva afición'  
-- Resultado : ''rollar es"  
-- Ejemplo 2 : '11, 8, Bienvenido a la clase de programación'  
-- Resultado : 'a la cla' 
+- Ejemplo 1: 4, 8, 'Desarrollar es mi nueva afición'  
+- Resultado 1: ''rollar es"  
+- Ejemplo 2: '11, 8, Bienvenido a la clase de programación'  
+- Resultado 2: 'a la cla' 
 
 ### Ejercicio 3
 Escribe un programa que solicite al usuario una frase. A continuación le solicitará la letra que quiere reemplazar y por qué letra deberá reemplazarse. Por último el programa mostrará el número de veces que la letra está presente en la frase y el resultado final tras reemplazarla.
  
-- Ejemplo 1 : 'Desarrollar es mi nuevo pasatiempos', 'a','e'
-- Resultado : 4 apariciones. 'Deserroller es mi nueve pesetiempos'  
+- Ejemplo: 'Desarrollar es mi nuevo pasatiempos', 'a','e'
+- Resultado: 4 apariciones. 'Deserroller es mi nueve pesetiempos'  

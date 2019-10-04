@@ -1,3 +1,5 @@
+# Próximos pasos
+
 Como ya te habíamos adelantado, **tu viaje en el mundo de Python solo acaba de empezar**. Python es uno de los lenguajes de programación con mayor potencial, y ahora que ya dispones de una sólida base de los fundamentos básicos, podrás comenzar a explorar otros mundos como:
 - Desarrollo de aplicaciones web
 - Internet of Things

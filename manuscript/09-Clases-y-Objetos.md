@@ -4,45 +4,45 @@ Python soporta la programación orientada a objetos. Esto quiere decir que podem
 La definición de una clase en Python se hace de la siguiente manera:
 
 ```python
-    class Persona: 
-	    # atributos
-	    nombre = "Josune"
-	    edad = 24 
-	    
-	    # metodos
-	    def camina(self):
-		    print(self.nombre + " está caminando")
+class Persona: 
+	# atributos
+	nombre = "Josune"
+	edad = 24 
+	
+	# metodos
+	def camina(self):
+		print(self.nombre + " está caminando")
 ```	    
 
 A partir de una clase se pueden crear tantas **objetos** como se desee. Los objetos de una clase se conocen como **instancias**. Cada objeto **contiene los atributos y métodos de la clase** y podrá asignar a esos atributos unos valores concretos. Esto se conoce como el **estado de un objeto**.
 
 ```python
-    p1 = Persona() # la variable p1 contiene un objeto de la clase Persona
-    p1.camina()
-    print(p1.nombre)  
-    print(p1.edad)
+p1 = Persona() # la variable p1 contiene un objeto de la clase Persona
+p1.camina()
+print(p1.nombre)  
+print(p1.edad)
 ```
 
 Una función dentro de una clase se conoce como **método**. Las clases contienen el método especial `__init__` conocido como **constructor** y que sirve para inicializar un objeto. Al crear un objeto siempre se llama al constructor. Una diferencia importante con otros lenguajes como Java es que solo se puede definir un único constructor.
 
 ```python
-    class Persona:  
-	    def __init__(self, nombre, apellidos, edad):  
-		    self.nombre= nombre
-		    self.apellidos = apellidos 
-		    self.edad = edad 
-        
-	    def camina(self):
-		    print(self.nombre + " está caminando")
+class Persona:  
+	def __init__(self, nombre, apellidos, edad):  
+		self.nombre= nombre
+		self.apellidos = apellidos 
+		self.edad = edad 
+	
+	def camina(self):
+		print(self.nombre + " está caminando")
 ```
 
 En la creación del objeto es necesario indicar los argumentos del constructor:
 
 ```python
-    p1 = Persona("Mike", "Mendiola", 25)
-    p1.camina()
-    print(p1.nombre)  
-    print(p1.edad)
+p1 = Persona("Mike", "Mendiola", 25)
+p1.camina()
+print(p1.nombre)  
+print(p1.edad)
 ```
 
 El parámetro `self` de los métodos es una referencia a la propia instancia y se utiliza para acceder a las variables que pertenecen a la clase. Si no se define un constructor, la clase hereda uno que únicamente recibe el argumento `self`.

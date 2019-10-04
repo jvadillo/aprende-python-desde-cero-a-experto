@@ -3,23 +3,23 @@
 Un diccionario es un conjunto de parejas **clave- valor** (key-value). Es decir, se accede a cada elemento a partir de su clave. Se definen de la siguiente manera:
 
 ```python
-    estudiante = {
-    	"nombre": "Iñaki Perurena",
-    	"edad": 30,
-    	"nota_media": 7.25,
-    	"repetidor" : False
-    }
+estudiante = {
+	"nombre": "Iñaki Perurena",
+	"edad": 30,
+	"nota_media": 7.25,
+	"repetidor" : False
+}
 ```
 
 Las **claves tienen que ser únicas** y estar formadas por un **string o un número**. Para acceder al valor de una clave exiten dos maneras distintas:
 
 ```python
-    edad = estudiante["edad"] # devuelve el valor de 'edad'
-    nota_media = estudiante.get("nota_media") # devuelve el valor de 'nota_media'
-    
-    estudiante["edad"] = 25 # actualiza el valor de 'edad'
-    estudiante["suspensos"] = 3 # inserta una nueva pareja clave - valor
-    estudiante.update({'aprobados':'8'}): inserta una nueva pareja clave - valor o actualiza su valor si ya existiera
+edad = estudiante["edad"] # devuelve el valor de 'edad'
+nota_media = estudiante.get("nota_media") # devuelve el valor de 'nota_media'
+
+estudiante["edad"] = 25 # actualiza el valor de 'edad'
+estudiante["suspensos"] = 3 # inserta una nueva pareja clave - valor
+estudiante.update({'aprobados':'8'}): inserta una nueva pareja clave - valor o actualiza su valor si ya existiera
 ```
 
 Algunos de los métodos más utilizados son los siguientes:
@@ -85,6 +85,7 @@ edades = {
 del edades ["Aitor"]
 ```
 Otra alternativa también utilizada y mencionada anteriormente es la función `pop()`, el cual devuelve el valor del elemento eliminado:
+
 ```python
 edades = {
    "Ane" : 22,
@@ -103,8 +104,8 @@ Crea un programa que recorra una lista y cree un diccionario que contenga el nú
 
 ### Ejercicio 2
 Recorre un diccionario y crea una lista solo con los valores que contiene, sin añadir valores duplicados.
-Ejemplo: `{'Mikel': 3, 'Ane': 8, 'Amaia': 12, 'Unai': 5, 'Jon': 8, 'Ainhoa': 7, 'Maite': 5}`
-Resultado: `[3, 8, 12, 5, 7]`
+- Ejemplo: `{'Mikel': 3, 'Ane': 8, 'Amaia': 12, 'Unai': 5, 'Jon': 8, 'Ainhoa': 7, 'Maite': 5}`
+- Resultado: `[3, 8, 12, 5, 7]`
 
 ### Ejercicio 3
 Crea una programa de Login que compruebe el usuario y contraseña en el diccionario a continuación:
