@@ -47,3 +47,11 @@ Python soporta la herencia múltiple, es decir, heredad métodos y atributos de 
     class Teclado(Dispositivo, Periférico):
 	    # cuerpo de la clase
 ```
+
+## 👩‍💻Coding time! 👨‍💻
+
+### Ejercicio 1
+Continuando con el Ejercicio 1 del tema anterior, crea una clase `Vehículo` y otra llamada `Bicicleta`. La clase Vehículo será el padré de `Coche` y `Bicicleta` y contendrá las propiedades y métodos comunes de ambos. La bicicleta no tendrá gasolina ni repostará, pero cada 50 kilometros necesitará invocar al método `hinchar_ruedas()` o no podrá continuar.
+
+### Ejercicio 2
+Continuando con el Ejercicio 4 del tema anterior, crea una clase `Poligono` y otra llamada `Cuadrado`. La clase `Poligono` será el padre de `Triangulo` y `Cuadrado`, y contendrá las propiedades y métodos comunes de ambos. Ambos tendrán también otra propiedad llamada `color`.
