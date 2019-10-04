@@ -89,7 +89,7 @@ Los parámetros y variables definidos en una función no estarán accesibles fue
 
 Por el contrario, las variables definidas fuera de una función sí que están accesibles desde dentro de la función. Se considera que están en el **ámbito global**. No obstante, no se podrán modifican dentro de la función a no ser que estén definidas con la palabra clave `global`.
 
-## 👩‍💻Coding time! 👨‍💻
+## Coding time!
 
 ### Ejercicio 1
 Crea un programa que determine si un número es primo o no. Deberás crear la función `esPrimo()` que reciba como parámetro un número y devuelva `True` o `False` indicando si el número es primo o no.

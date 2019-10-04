@@ -95,7 +95,7 @@ class Persona:
         self.__edad = edad # atributo private
 ```
 
-## 👩‍💻Coding time! 👨‍💻
+## Coding time!
 
 ### Ejercicio 1
 Crea la clase Coche que contenga las siguientes propiedades:

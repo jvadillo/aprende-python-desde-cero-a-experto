@@ -1,4 +1,5 @@
 # Estructuras de control
+
 ## Condicionales
 Las estructuras de control se utilizan para **ejecutar bloques de código en función de condiciones**.
 

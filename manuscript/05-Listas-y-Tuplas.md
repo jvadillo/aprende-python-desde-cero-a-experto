@@ -1,4 +1,5 @@
 # Listas y tuplas
+
 Las listas permiten **guardar más de un elemento** dentro de una variable en un orden concreto. Pueden contener un número **ilimitado** de variables de **cualquier tipo**:
 
 ```python
@@ -47,7 +48,7 @@ Una acción típica de las tuplas es "desempaquetar" (unpack) sus valores:
     a, b, c = valores 
 ```
 
-## 👩‍💻Coding time! 👨‍💻
+## Coding time!
 ### Ejercicio 1
 Dada la siguiente lista `[12, 23, 5, 29, 92, 64]` realiza las siguientes operaciones y vete mostrando la lista resultante por pantalla:
 1. Elimina el último número y añádelo al principio.
