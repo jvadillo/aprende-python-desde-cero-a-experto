@@ -34,8 +34,62 @@ Algunos de los métodos más utilizados son los siguientes:
 | `valor in diccionario.values()` | Devuelve True si el diccionario contiene el valor o False en caso contrario. |
 
 ## Recorrer un diccionario
-//TODO
+La forma más habitual de recorrer un diccionario es mediante la sentencia `for`. Al recorrer un diccionario, por defecto se iterará sobre sus claves:
 
+```python
+diccionario =  {'a':1,  'b':2,  'c':3}
+for key in diccionario:
+	print(key)
+
+# Resultado: a b c
+```
+Es decir, el código anteiror será equivalente al siguiente:
+```python
+diccionario =  {'a':1,  'b':2,  'c':3}
+for key in diccionario.keys():
+	print key
+
+# Resultado: a b c
+```
+Por lo tanto, para iterar accediendo a los valores, realizaremos lo siguiente:
+
+```python
+diccionario =  {'a':1,  'b':2,  'c':3}
+for key in diccionario:
+	print(diccionario[key])
+
+# Resultado: 1 2 3
+```
+Otro manera alternativa sería empleando la función `items()`, la cual devuelve el diccionario como tuplas de tipo (key,value):
+```python
+diccionario =  {'a':1,  'b':2,  'c':3}
+for key, value in diccionario.items():
+	print("El valor de %s is %d" % (key, value))
+
+# Resultado:
+# El valor de a is 1
+# El valor de b is 2
+# El valor de c is 3
+```
+## Borrar un elemento
+Para borrar un elemento de un diccionario se utiliza la instrucción `del`.
+```python
+edades = {
+   "Ane" : 22,
+   "Jokin" : 27,
+   "Aitor" : 15
+}
+del edades ["Aitor"]
+```
+Otra alternativa también utilizada y mencionada anteriormente es la función `pop()`, el cual devuelve el valor del elemento eliminado:
+```python
+edades = {
+   "Ane" : 22,
+   "Jokin" : 27,
+   "Aitor" : 15
+}
+edades.pop("Aitor")
+```
 
 ## 👩‍💻Coding time! 👨‍💻
 ### Ejercicio 1
