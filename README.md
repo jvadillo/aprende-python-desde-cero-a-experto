@@ -1,7 +1,7 @@
 # Aprende Python desde cero a experto :rocket: (Work In Progress :construction:)
 Este es un libro grauito para aprender Python desde cero, pensado tanto para gente sin ninguna experiencia como para aquellos que ya dominan otros lenguajes de programación. Ha sido escrito para aprender de forma ágil y eficiente, centrándose en los aspectos más útiles del lenguaje (sin perder el tiempo es cosas que nunca utilizarás). Mediante pequeñas prácticas y ejemplos irás aprendiendo los fundamentos básicos de Python  hasta llegar a ser un experto en el lenguaje.
 
-![Portada](https://raw.githubusercontent.com/jvadillo/aprende-python-desde-cero-a-experto/master/manuscript/APRENDE%20PYTHON.png )
+![Portada del libro Aprende Python desde cero a experto](https://raw.githubusercontent.com/jvadillo/aprende-python-desde-cero-a-experto/master/manuscript/rsz2_aprende_python.png)
 
 ## Conocimientos previos
 El curso no requiere conocimientos previos de ningún tipo ni experiencia en programación, pero en caso de tenerla podrás fortalecer los conocimientos que tienen en común los distintos lenguajes de programación y avanzar más rápido. No te preocupes si es la primera vez que te enfrentas a la programación, el libro está pensado para acompañarte paso a paso y de forma ágil, sin perder el tiempo aprendiendo aspectos irrelevantes del lenguaje.
