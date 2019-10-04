@@ -1,4 +1,6 @@
 # Aprende Python desde cero a experto :rocket:
+[![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://www.jonvadillo.com) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://www.jonvadillo.com) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://www.jonvadillo.com)
+
 Este es un **libro grauito para aprender Python desde cero**, pensado tanto para gente sin ninguna experiencia como para aquellos que ya dominan otros lenguajes de programación. Ha sido escrito para aprender Python de forma ágil y eficiente, centrándose en los aspectos más útiles del lenguaje (**sin perder el tiempo es cosas que nunca utilizarás**). Mediante pequeñas prácticas y ejemplos irás aprendiendo los fundamentos básicos de Python hasta llegar a ser un experto en el lenguaje.
 
 ![Portada del libro Aprende Python desde cero a experto](https://raw.githubusercontent.com/jvadillo/aprende-python-desde-cero-a-experto/master/manuscript/rsz2_aprende_python.png)
