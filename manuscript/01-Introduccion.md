@@ -2,10 +2,10 @@
 
 Python es sin duda alguna uno de los lenguajes de programación más populares que existen hoy en día. En comparación con otros lenguajes de programación, Python presume de tener una **curva de aprendizaje pequeña y un gran potencial**, ya que hablamos de un lenguaje con el que es posible realizar tareas de todo tipo, como por ejemplo:
 
- - Desarrollo de aplicaciones web
- - Inteligencia artificial
- - Automatización de tareas
- - Análisis avanzado de datos
+- Desarrollo de aplicaciones web
+- Inteligencia artificial
+- Automatización de tareas
+- Análisis avanzado de datos
 
  En este libro aprenderás los fundamentos básicos del lenguaje de forma que al terminar su lectura cuentes con una sólida base sobre la que seguir tu carrera como programador.
 

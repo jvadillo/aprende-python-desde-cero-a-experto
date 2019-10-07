@@ -8,16 +8,16 @@ edad = 30 # número entero
 ```
 El nombre de una variable se conoce como **identificador**, y deberá cumplir las siguientes reglas:
 
- - Comenzar con una letra o un guión bajo.
- - El resto del nombre estará formado por letras, números o guiones bajos.
- - Los nombres de las variables son *case sensitive*, es decir, no es lo mismo que una variable se llame `resultado` que `RESULTADO`.
- - Existen una serie de palabras reservadas que no se pueden utilizar (def, global, return, if, for, ...).
+- Comenzar con una letra o un guión bajo.
+- El resto del nombre estará formado por letras, números o guiones bajos.
+- Los nombres de las variables son *case sensitive*, es decir, no es lo mismo que una variable se llame `resultado` que `RESULTADO`.
+- Existen una serie de palabras reservadas que no se pueden utilizar (def, global, return, if, for, ...).
 
 Algunas de las recomendaciones respecto a los nombres de las variables están recogidas en la [Guía oficial de Estilos PEP8 de Python](https://www.python.org/dev/peps/pep-0008/). Entre las más habituales encontramos las siguientes:
 
- - Utilizar nombres descriptivos, en minúsculas y separados por guiones bajos si fuese necesario: `resultado`, `mi_variable`, `valor_anterior`,...
- - Escribir las constantes en mayúsculas: `MI_CONSTANTE`, `NUMERO_PI`, ...
- - Antes y después del signo `=`, debe haber uno (y solo un) espacio en blanco.
+- Utilizar nombres descriptivos, en minúsculas y separados por guiones bajos si fuese necesario: `resultado`, `mi_variable`, `valor_anterior`,...
+- Escribir las constantes en mayúsculas: `MI_CONSTANTE`, `NUMERO_PI`, ...
+- Antes y después del signo `=`, debe haber uno (y solo un) espacio en blanco.
 
 __Nota__: No olvides que lo que la guía plantea son recomendaciones y no obligaciones. Por ejemplo, mientras PEP8 recomienda tabular el código con 4 espacioes en blanco, la guía particular de los desarrolladores de Google habla de 2 espacios en lugar de 4.
 
@@ -239,7 +239,7 @@ Escribe un programa que solicite el nombre, DNI y edad, lo almacene en 3 variabl
 
 ### Ejercicio 3
 Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los último 3 caracteres de un string introducido por el usuario.
-  
+
 - Ejemplo 1: 'aprendiendo'  
 - Resultado 1: 'aprndo'  
 - Ejemplo 2: 'escribiendo código'  
