@@ -19,8 +19,8 @@ Los operadores aritméticos se utilizan para realizar operaciones matemáticas (
 Ejemplos:
 
 ```python
-x= 5	
-y= 2
+x = 5	
+y = 2
 print(x + y) # 7
 print(x - y) # 3
 print(x * y) # 10

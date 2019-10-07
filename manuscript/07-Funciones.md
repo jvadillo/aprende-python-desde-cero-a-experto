@@ -31,8 +31,8 @@ saludo() # Hola, Anónimo. ¡Bienvenida!
 ```
 Existen dos tipos de parámetros o argumentos:
 
- - **Parámetros posicionales**: la posición en la que se pasan importa
- - **Parámetros con palabra clave (keyword arguments)**: la posición no
+- **Parámetros posicionales**: la posición en la que se pasan importa
+- **Parámetros con palabra clave (keyword arguments)**: la posición no
    importa, se indica una clave para cada parámetro.
 
 ```python
