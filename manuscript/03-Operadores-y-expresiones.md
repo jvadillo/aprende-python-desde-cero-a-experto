@@ -3,7 +3,7 @@ Los operadores son símbolos especiales que permiten realizar operaciones aritm�
 
 ## Operadores aritméticos
 
-Los operadores aritméticos se utilizan para realizar operaciones matemáticas (suma, resta, multiplicación,...):
+Los operadores aritméticos se utilizan para realizar operaciones matemáticas (suma, resta, multiplicación,...). La tabla siguiente contiene todos los operadores aritméticos permitidos por Python:
 
 | Operador | Ejemplo | Significado |
 | :--:         |     :--:     |          -- |
@@ -30,7 +30,7 @@ print(x / y) # 2.5
 
 ## Operadores relacionales o de comparación
 
-Los operadores relacionales se utilizan para comparar valores y devuelven como resultado un booleano: True o False.
+Los operadores relacionales se utilizan para comparar valores y devuelven como resultado un booleano: `True` o `False`.
 
 | Operador | Ejemplo | Significado |
 | :--:         |     :--:     |          -- |
@@ -43,7 +43,7 @@ Los operadores relacionales se utilizan para comparar valores y devuelven como r
 
 
 ## Operadores lógicos
-Los operadores lógicos `and` `or`, or y `not`.
+Los operadores lógicos `and` `or`, y `not` evalúan valores devolviendo también `True`o `False` como resultado:
 
 | Operador | Ejemplo | Significado |
 | :--:         |     :--:     |          -- |

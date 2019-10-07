@@ -1,5 +1,12 @@
 # Variables y Tipos de datos
-Las variables permiten **almacenar datos del programa**. Las variables será de un tipo u otro en función de la información que se guarde en ellas. El nombre de una variable se conoce como **identificador**, y deberá cumplir las siguientes reglas:
+
+Las variables permiten **almacenar datos del programa**. Estas serán de un tipo u otro en función de la información que se guarde en ellas.
+
+```python
+nombre = 'Amaia' # cadena de texto
+edad = 30 # número entero
+```
+El nombre de una variable se conoce como **identificador**, y deberá cumplir las siguientes reglas:
 
  - Comenzar con una letra o un guión bajo.
  - El resto del nombre estará formado por letras, números o guiones bajos.
@@ -34,7 +41,7 @@ Leire
 Leire
 ```
 
-Como se puede ver en el siguiente ejemplo, es posible pasar como argumento el mensaje a mostrar al usuario.
+Como se puede ver en el siguiente ejemplo, es posible también mostrar un mensaje al usuario, tal y como muestra el siguiente ejemplo.
 
 ```python
 >>> nombre = input("Escribe tu nombre: ")
@@ -44,7 +51,7 @@ Leire
  ```
 
 ## Números
-Python soporta dos tipos de números: enteros (integer) y de punto flotante (float)
+Python soporta dos tipos de números: enteros (integer) y de punto flotante (float).
  
  ```python
 # integer
@@ -60,7 +67,7 @@ z = float(5)
 print(z)
 ```
 
-Si tenemos dudas del valor de una variable, podemos utilizar la función `type()`:
+Si tenemos dudas del valor de una variable, podemos mostrar su tipo utilizando la función `type()`:
 
 ```python
 >>> x = 5.5
@@ -78,7 +85,7 @@ mi_nombre= "Ane"
 print(mi_nombre)
 ```
 
-La diferencia principal es la mayor facilidad de las comillas dobles para introducir apóstrofes:
+La diferencia principal se encuentra en que las comillas dobles aportan mayor facilidad en textos que incluyan apóstrofes:
 
 ```python
 mi_nombre = 'I\'m John'
@@ -87,7 +94,7 @@ mi_nombre= "I'm John"
 print(mi_nombre)
 ```
 
-Más información sobre strings y carácteres especiales en: [https://docs.python.org/3/tutorial/introduction.html#strings](https://docs.python.org/3/tutorial/introduction.html#strings)
+Más información sobre strings y carácteres especiales en: [ https://docs.python.org/3/tutorial/introduction.html#strings](https://docs.python.org/3/tutorial/introduction.html#strings)
 
 Para definir strings multi-línea se utiliza la triples comillas (`"""`):
 
@@ -113,7 +120,7 @@ Es posible unir dos strings con el operador `+`:
 ```
 
 **Método alternativo 1**: str.join():
-El método `join()` recibe como argumento el listado (de tipo List, Tuple, String, Dictionary y Set) de strings que se desean concatenar. Se invoca sobre el separador (el cual a su vez es un string también):
+El método `join()` recibe como argumento el listado (de tipo List, Tuple, String, Dictionary y Set) de strings que se desean concatenar. Se invoca sobre el separador que se utilizará para unir las cadenas (el cual a su vez es un string también):
 
 ```python
 >>> strings = ['do', 're', 'mi']
@@ -122,7 +129,7 @@ El método `join()` recibe como argumento el listado (de tipo List, Tuple, Strin
 'do - re - mi'
 ```
 
-  Para iterar un elemento detrás del otro se introducirá como separador un string vacío:
+Para iterar un elemento detrás del otro se introducirá string vacío como separador:
 
 ```python
 >>> strings = ['do', 're', 'mi']
@@ -148,7 +155,7 @@ print(frase)
 ```
 
 ### Conversión de tipos
-A la hora de concatenar un string con otras variables como integer o float puede haber problemas:
+A la hora de concatenar un string con otras variables como `integer` o `float` puede haber problemas:
 
 ```python
 >>> edad = 25
@@ -160,7 +167,7 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "int") to str
 ```
 
-Mediante la función str() podemos convertir un valor a string:
+Mediante la función `str()` podemos convertir un valor a string y evitar así cualquier tipo de problema:
 
 ```python
 >>> edad = 25
@@ -173,7 +180,7 @@ De igual manera es posible convertir a otros tipos con las funciones `int()`, `f
 
 ### Métodos en cadenas de texto (string)
 
-Es posible **obtener un carácter concreto** de un string utilizando los corchetes `[]`:
+Es posible **obtener un carácter concreto** de un string utilizando los corchetes `[]` y el índice del carácter al que queremos acceder:
 
 ```python
 frase = 'Aprendiendo a programar en Python'
@@ -231,7 +238,8 @@ El programa deberá mostrar en pantalla todos los valores.
 Escribe un programa que solicite el nombre, DNI y edad, lo almacene en 3 variables distintas y muestre por pantalla los valores introducidos.
 
 ### Ejercicio 3
-Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los último 3 caracteres de un string introducido por el usuario.  
+Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los último 3 caracteres de un string introducido por el usuario.
+  
 - Ejemplo 1: 'aprendiendo'  
 - Resultado 1: 'aprndo'  
 - Ejemplo 2: 'escribiendo código'  

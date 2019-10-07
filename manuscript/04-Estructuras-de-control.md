@@ -7,44 +7,44 @@ Las estructuras de control se utilizan para **ejecutar bloques de código en fun
 Se evalúa la condición especificada en la sentencia `if` y en caso de cumplirse se ejecutará el bloque de código indentado. En caso de que el resultado de la condición sea `False`, no el bloque especificado no se ejecutará:
 
 ```python
-    numero = 5
-    if numero > 1:
-    	print("Es mayor que uno")
+numero = 5
+if numero > 1:
+    print("Es mayor que uno")
 ```
 
 Es posible especificar un bloque de código que se ejecute en caso de que la condición no se cumpla:
 
 ```python
-    numero = 2
-    if numero > 10:
-    	print("Es mayor que diez")
-    else:
-    	print("Es menor o igual que diez")
+numero = 2
+if numero > 10:
+    print("Es mayor que diez")
+else:
+    print("Es menor o igual que diez")
 ```
 
-Mediante la expresión `elif` podemos comprobar otras condiciones. Se seguirán comprobando todos los `elif` hasta que uno cumpla la condición especificada. En caso contrario, se ejecutará el bloque de código dentro de else (si lo hubiera)
+También podemos comprobar más condiciones mediante la expresión `elif`. En este caso, se seguirán comprobando todas las condiciones `elif` hasta que una de ellas se cumpla. En caso contrario, se ejecutará el bloque de código dentro de `else` (si lo hubiera).
 
 ```python
-    numero = 5
-    if numero < 3:
-    	print("Es menor que 3")
-    elif numero < 6:
-    	print("El número está entre el 3 y el 5")
-    else:
-    	print("Es mayor o igual a 6")
+numero = 5
+if numero < 3:
+    print("Es menor que 3")
+elif numero < 6:
+    print("El número está entre el 3 y el 5")
+else:
+    print("Es mayor o igual a 6")
 ```
 
-Otra opción es anidar distintos bloques de `IF`s.
+Python no tiene limitaciones para anidar distintos bloques de `IF`s.
 
 ```python
-    numero = 2
-    if numero >= 0:
-    	if numero == 0:
-    		print("El valor es 0")
-    	else:
-    		print("Es un número positivo")
+numero = 2
+if numero >= 0:
+    if numero == 0:
+        print("El valor es 0")
     else:
-    	print("Es un número negativo")
+        print("Es un número positivo")
+else:
+    print("Es un número negativo")
 ```
 
 ## Bucles
@@ -55,35 +55,35 @@ Los bucles permiten ejecutar un bloque de código tantas veces como queramos.
 La sentencia `while` permite ejecutar un bloque de código mientras la expresión que definamos se cumpla (es decir, devuelva `True`). Python interpretará como `True` cualquier valor distinto a `0` o `None`.
 
 ```python
-    contador = 0
-    while(contador < 5):
-    	contador = contador+1
-    	print("Iteración número {}".format(contador))
-    print ("¡Fin!")
+contador = 0
+while(contador < 5):
+    contador = contador+1
+    print("Iteración número {}".format(contador))
+print ("¡Fin!")
 ```
 
 Para detener una ejecución se utiliza la sentencia `break`:
    
 ```python 
-    contador = 0
-    while(contador < 5):
-    	contador = contador+1
-    	print("Iteración número {}".format(contador))
-    	if contador == 3:
-	    	break
-    print ("¡Fin!")
+contador = 0
+while(contador < 5):
+    contador = contador+1
+    print("Iteración número {}".format(contador))
+    if contador == 3:
+        break
+print ("¡Fin!")
 ```
 
 También es posible saltar únicamente la iteración actual mediante la sentencia `continue`:
 
 ```python
-    contador = 0
-    while(contador < 5):
-    	contador = contador+1
-    	if contador == 3:
-	    	continue
-    	print("Iteración número {}".format(contador))
-    print ("¡Fin!")
+contador = 0
+while(contador < 5):
+    contador = contador+1
+    if contador == 3:
+        continue
+    print("Iteración número {}".format(contador))
+print ("¡Fin!")
 ```
 
 La salida del programa anterior será la siguiente:
@@ -94,7 +94,10 @@ La salida del programa anterior será la siguiente:
     Iteración número 5
     Bucle while finalizado
 
+Otros lenguajes de programación ofrecen otra estructura similar conocida como DO - WHILE. No es el caso de Python, por lo que habría que emular dicho comportamiento mediante nuestro código.
+
 #### Bucle WHILE con ELSE
+
 Para ejecutar un código al finalizar, es decir, cuando la condición es `False` y no se ha finalizado con `break`, se utiliza la expresión `else`:
 
 ```python
@@ -150,7 +153,7 @@ for num in numeros:
 ```
 
 #### Bucle FOR con ELSE
-Python permite definir un bloque de código a ejecutar cuando la iteración por los elementos de una lista finaliza. Es importante mencionar que no se ejecutará si se ha finalizado mediante `break`.
+Python permite definir un bloque de código a ejecutar una vez la iteración por los elementos de una lista ha finalizado. Es importante mencionar que no se ejecutará si se ha finalizado mediante `break`.
 
 ```python
 alumnos = ["Ane", "Mikel", "Unai", "Lorea"]
@@ -165,25 +168,25 @@ else:
 La función `range([start,]  stop  [,  step])` devuelve una secuencia de números. Es por ello que se utiliza de forma frecuente para iterar:
 
 ```python
-    for i in range(3):
-        print(i)
-    # 0
-    # 1
-    # 2
+for i in range(3):
+    print(i)
+# 0
+# 1
+# 2
 ```
 
 También podemos indicar el inicio, fin y step:
 
 ```python
-    print("Números del 5 al 10") 
-    for i in range(5,  10): 
-    	print(i,  end=', ')
-    # 5,  6,  7,  8,  9,
+print("Números del 5 al 10") 
+for i in range(5,  10): 
+    print(i,  end=', ')
+# 5,  6,  7,  8,  9,
 
-    print("Números impares del 1 al 10")
-    for i in range(1,  10,  2):
-    	print(i,  end=', ')
-    # 1,  3,  5,  7,  9,
+print("Números impares del 1 al 10")
+for i in range(1,  10,  2):
+    print(i,  end=', ')
+# 1,  3,  5,  7,  9,
 ```
 
 Para iterar por una lista utilizando el índice, basta con combinarlo con la función `len()`:
@@ -198,22 +201,26 @@ Para iterar por una lista utilizando el índice, basta con combinarlo con la fun
 
 ### Ejercicio 1
 Crea un programa que solicite un número al usuario y devuelva el siguiente mensaje:
+
 - Si es mayor que 0: "Es un número positivo."
 - Si es igual a 0: "Es igual a cero.
 - Si es menor que 0: "Es un número negativo."
 
 ### Ejercicio 2
 Crea un programa que solicite dos números al usuario y muestre por pantalla la suma de todos los números que hay entre los dos números (ambos incluidos).
-Ejemplo: 4, 8
-Resultado: 30
+
+- Ejemplo: 4, 8
+- Resultado: 30
 
 ### Ejercicio 3
 Mejora el programa anterior para que muestre por separado la suma de los números pares y los impares.
-Ejemplo: 4, 8
-Resultado: Pares = 18, Impares = 12, Total = 30
+
+- Ejemplo: 4, 8
+- Resultado: Pares = 18, Impares = 12, Total = 30
 
 ### Ejercicio 4
 Escribe un programa que solicite al usuario un nombre de usuario y contraseña. El programa mostrará el mensaje "¡Bienvenido!" si el usuario introduce los siguientes datos:
+
 - Nombre de usuario: root
 - Contraseña: toor
 
