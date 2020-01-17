@@ -30,7 +30,7 @@ El curso comenzará tratando **los fundamentos más básicos de Python**, adentr
 
 ## Contribuir
 Toda contribución es más que bienvenida. Puedes contribuir con este libro de las siguientes:
-- Ayuda a mejorar el material notificando errores, planteando mejoras o incluso nuevos ejercicios prácticos.
+- Ayuda a mejorar el material notificando errores, planteando mejoras o incluso nuevos ejercicios prácticos. Puedes hacerlo respondiendo a [este issue](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/issues/2) directamente o enviándome un mensaje en Twitter (@JonVadillo).
 - Comparte y recomienda este libro o el repositorio en las redes sociales.
 - Recuerda que puedes adquirir este libro por el precio que consideres (¡desde cero euros!)
 
