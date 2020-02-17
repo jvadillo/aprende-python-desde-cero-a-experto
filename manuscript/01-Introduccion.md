@@ -34,7 +34,7 @@ Python es un **lenguaje multiplataforma**, lo que significa que podemos trabajar
 ### Instalar Python en Windows
 Sigue los siguientes pasos para instalar Python en Windows:
 
- 1. Descarga la última versión de Python para Windows desde la página web oficial: [ https://www.python.org/downloads/windows/]
+ 1. Descarga la última versión de Python para Windows desde la página web oficial: [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
  2. En función de la versión de tu sistema operativo (32 btis o 64 bits), tendrás que escoger entre una de las dos versiones: **Windows x86 executable installer** o **Windows x86-64 executable installer**.
  3. Una vez descargado, ejecuta el instalador marcando las casillas "Add Python 3.6 to PATH" y "Add Python to your environment variables".
 
