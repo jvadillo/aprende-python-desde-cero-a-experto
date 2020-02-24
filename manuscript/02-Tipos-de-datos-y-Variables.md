@@ -184,10 +184,10 @@ Es posible **obtener un carácter concreto** de un string utilizando los corchet
 
 ```python
 frase = 'Aprendiendo a programar en Python'
-course[0] # devuelve el primer caracter
-course[1] # devuelve el segundo caracter
-course[-1] # devuelve el primer caracter empezando por el final
-course[-2] # # devuelve el segundo caracter empezando por el final
+frase[0] # devuelve el primer caracter
+frase[1] # devuelve el segundo caracter
+frase[-1] # devuelve el primer caracter empezando por el final
+frase[-2] # # devuelve el segundo caracter empezando por el final
 ```
 
 Si queremos **obtener un substring**, utilizaremos la siguiente notación:
