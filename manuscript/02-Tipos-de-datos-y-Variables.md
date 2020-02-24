@@ -238,7 +238,7 @@ El programa deberá mostrar en pantalla todos los valores.
 Escribe un programa que solicite el nombre, DNI y edad, lo almacene en 3 variables distintas y muestre por pantalla los valores introducidos.
 
 ### Ejercicio 3
-Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los último 3 caracteres de un string introducido por el usuario.
+Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los últimos 3 caracteres de un string introducido por el usuario.
 
 - Ejemplo 1: 'aprendiendo'  
 - Resultado 1: 'aprndo'  
