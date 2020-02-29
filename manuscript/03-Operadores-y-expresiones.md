@@ -56,10 +56,43 @@ Los operadores lógicos `and` `or`, y `not` evalúan valores devolviendo tambié
 
 ### Ejercicio 1
 
-Crea un programa que solicite al usuario un número y muestre por pantalla la tabla de multiplicación del 1 al 10.
+Crea un programa que solicite al usuario un número del 1 al 10 y muestre por pantalla la tabla de multiplicación del 1 al 10.
+Ejemplo:
+```
+Introduce un número del 1 al 10: 3
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30
+```
 
 ### Ejercicio 2
-Crea un programa que solicite al usuario dos números y muestre por pantalla el resultado de las siguientes operaciones: suma, resta, multiplicación y división.
+Crea un programa que solicite al usuario dos números enteros y muestre por pantalla el resultado de las siguientes operaciones: suma, resta, multiplicación y división.
+Ejemplo:
+
+```
+Introduce el primer número: 8
+Introduce el segundo número: 2
+La suma es: 10
+La resta es: 6
+La multiplicación es: 16
+La división es: 4.0
+```
 
 ### Ejercicio 3
 Crea un programa que solicite al usuario el radio de un círculo y calcule el área.
+Nota: Utiliza 3.14159 como número PI para el cálculo del área.
+
+Ejemplo:
+```
+Introduce el radio: 3
+El área es: 28.274309999999996
+```
+
+
