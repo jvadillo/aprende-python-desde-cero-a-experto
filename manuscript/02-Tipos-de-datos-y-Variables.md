@@ -194,7 +194,8 @@ Si queremos **obtener un substring**, utilizaremos la siguiente notación:
 
 ```python
 frase = 'Aprendiendo a programar en Python'
-mi_substring = frase[1:5] # devuelve los caracteres desde la posición 1 hasta la 5 (no incluye el 5)
+mi_substring = frase[1:5] 
+# devuelverá los caracteres desde la posición 1 hasta la 5 (no incluye el 5)
 ```
 
 En caso de dejar la primera variable vacía, se considera la primera posición del string. Dejando la segunda variable vacía se considera la última posición del string:
@@ -212,14 +213,17 @@ En caso de dejar la primera variable vacía, se considera la primera posición d
 Otros métodos útiles de string:
 
 ```python
+len(str) # devuelve la longitud del string
 str.upper() # convierte a mayúsculas
 str.lower() # convierte a minúsculas
 str.title() # convierte a mayúsculas la primera letra de cada palabra
-str.count(substring [, inicio, fin]) # devuelve el número de veces que aparece el substring en el string. Opcionalmente se puede indicar el inicio y fin. 
-str.find(‘d’) # devuelve el índice de la primera aparición de 'd' (o -1 si no lo encuentra)
+str.count(substring [, inicio, fin]) # devuelve el número de veces que aparece
+# el substring en el string. Opcionalmente se puede indicar el inicio y fin. 
+str.find(‘d’) # devuelve el índice de la primera aparición de 'd'
+# (devolverá -1 si no lo encuentra)
 substr in str # devuelve True si el string contiene el substring
-str.replace(old, new [, count])   # reemplaza 'old' por 'new'un máximo de 'count' veces (opcional).
-str.isnumeric()   # devuelve True si str contiene solamente números
+str.replace(old, new [, count]) # reemplaza 'old' por 'new' un máximo de 'count' veces.
+str.isnumeric() # devuelve True si str contiene solamente números
 ```
 
 ## Coding time!
@@ -238,7 +242,7 @@ El programa deberá mostrar en pantalla todos los valores.
 Escribe un programa que solicite el nombre, DNI y edad, lo almacene en 3 variables distintas y muestre por pantalla los valores introducidos.
 
 ### Ejercicio 3
-Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los últimos 3 caracteres de un string introducido por el usuario.
+Escribe un programa que genere un string compuesto por los primeros 3 caracteres y los últimos 3 caracteres de un string introducido por el usuario. Pista: tendrás que utilizar la función `len()` en la obtención de los últimos 3 caracteres.
 
 - Ejemplo 1: 'aprendiendo'  
 - Resultado 1: 'aprndo'  
