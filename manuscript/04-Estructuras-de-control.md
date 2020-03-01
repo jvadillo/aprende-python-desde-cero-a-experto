@@ -13,7 +13,17 @@ if numero > 1:
     print("Es mayor que uno")
 ```
 
-Mediante la palabra reservada `if` es posible especificar un bloque de código que se ejecute en caso de que la condición no se cumpla:
+Las condiciones pueden tener mayor complejidad:
+
+```python
+edad = 16
+altura = 175
+if (edad > 14 and altura > 160):
+    print("Puede montarse en la montaña rusa")
+```
+
+
+Mediante la palabra reservada `else` es posible especificar un bloque de código que se ejecute en caso de que la condición no se cumpla:
 
 ```python
 numero = 2
@@ -211,17 +221,57 @@ Crea un programa que solicite un número al usuario y devuelva el siguiente mens
 - Si es igual a 0: "Es igual a cero.
 - Si es menor que 0: "Es un número negativo."
 
-### Ejercicio 2
-Crea un programa que solicite dos números al usuario y muestre por pantalla la suma de todos los números que hay entre los dos números (ambos incluidos).
+Ejemplo 1:
 
-- Ejemplo: 4, 8
-- Resultado: 30
+```
+Introduce un número: 5
+Es un número positivo
+```
+
+Ejemplo 2:
+
+```
+Introduce un número: -3
+Es un número negativo
+```
+
+### Ejercicio 2
+Escribe un programa que solicite dos números enteros al usuario y muestre por pantalla la suma de todos los números enteros que hay entre los dos números (ambos números incluidos).
+
+Ejemplo 1:
+
+```
+Introduce el número de inicio: 4
+Introduce el número de fin: 8
+El resultado es:  30
+```
+
+Ejemplo 2:
+
+```
+Introduce el número de inicio: 10
+Introduce el número de fin: 15
+El resultado es:  75
+```
 
 ### Ejercicio 3
 Mejora el programa anterior para que muestre por separado la suma de los números pares y los impares.
 
-- Ejemplo: 4, 8
-- Resultado: Pares = 18, Impares = 12, Total = 30
+Ejemplo 1:
+
+```
+Introduce el número de inicio: 4
+Introduce el número de fin: 8
+Los pares suman 18 y los impares 12
+```
+
+Ejemplo 2:
+
+```
+Introduce el número de inicio: 10
+Introduce el número de fin: 15
+Los pares suman 36 y los impares 39
+```
 
 ### Ejercicio 4
 Escribe un programa que solicite al usuario un nombre de usuario y contraseña. El programa mostrará el mensaje "¡Bienvenido!" si el usuario introduce los siguientes datos:
@@ -231,8 +281,40 @@ Escribe un programa que solicite al usuario un nombre de usuario y contraseña. 
 
 Si los datos de acceso son incorrectos mostrará el mensaje "Acceso fallido" y el programa finalizará.
 
+Ejemplo 1:
+
+```
+Introduce el nombre de usuario: root
+Introduce la contraseña: toor
+¡Bienvenido!
+```
+
+Ejemplo 2:
+
+```
+Introduce el nombre de usuario: root
+Introduce la contraseña: 123456
+Acceso fallido
+```
+
 ### Ejercicio 5
-Mejora el programa anterior para que permita 3 intentos. Cada vez vez que el usuario introduzca datos de acceso incorrectos el programa mostrará el mensaje: "Datos incorrectos. Le quedan X intentos.", siendo X el número de intentos restantes. Tras el tercer fallo el programa mostrará el mensaje "Acceso fallido" y finalizará.
+Mejora el programa anterior para que solo permita 3 intentos. Cada vez vez que el usuario introduzca datos de acceso incorrectos el programa mostrará el mensaje: "Datos incorrectos. Le quedan X intentos.", siendo X el número de intentos restantes. Tras el tercer fallo el programa mostrará el mensaje "Has agotado todos tus intentos." y finalizará.
+
+Ejemplo:
+
+```
+Introduce el nombre de usuario: root
+Introduce la contraseña: 123456
+Datos incorrectos. Le quedan 2 intentos.
+Introduce el nombre de usuario: root
+Introduce la contraseña: abcd
+Datos incorrectos. Le quedan 1 intentos.
+Introduce el nombre de usuario: root
+Introduce la contraseña: 123abc
+Datos incorrectos. Le quedan 0 intentos.
+
+Has agotado todos tus intentos.
+```
 
 ### Ejercicio 6
 Crea un programa que reciba 5 números del usuario y muestre el mayor de todos por pantalla.
