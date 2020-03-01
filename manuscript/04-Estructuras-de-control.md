@@ -4,21 +4,24 @@
 Las estructuras de control se utilizan para **ejecutar bloques de código en función de condiciones**.
 
 ### Sentencia IF - ELSE
-Se evalúa la condición especificada en la sentencia `if` y en caso de cumplirse se ejecutará el bloque de código indentado. En caso de que el resultado de la condición sea `False`, no el bloque especificado no se ejecutará:
+Se evalúa la condición especificada en la sentencia `if` y en caso de cumplirse se ejecutará el bloque de código indentado (tabulado). En caso de que el resultado de la condición sea `False`, el bloque especificado no se ejecutará:
 
 ```python
 numero = 5
 if numero > 1:
+    # Se ejecutará cuando la condición sea True
     print("Es mayor que uno")
 ```
 
-Es posible especificar un bloque de código que se ejecute en caso de que la condición no se cumpla:
+Mediante la palabra reservada `if` es posible especificar un bloque de código que se ejecute en caso de que la condición no se cumpla:
 
 ```python
 numero = 2
 if numero > 10:
+     # Se ejecutará cuando la condición sea True
     print("Es mayor que diez")
 else:
+    # Se ejecutará cuando la condición sera False
     print("Es menor o igual que diez")
 ```
 
@@ -34,7 +37,7 @@ else:
     print("Es mayor o igual a 6")
 ```
 
-Python no tiene limitaciones para anidar distintos bloques de `IF`s.
+Tal y como muestra el siguiente código de ejemplo, Python no tiene limitaciones para anidar distintos bloques de `IF`s.
 
 ```python
 numero = 2
@@ -57,18 +60,19 @@ La sentencia `while` permite ejecutar un bloque de código mientras la expresió
 ```python
 contador = 0
 while(contador < 5):
+    # Se ejecutará mientras la variable contador sea menor a 5.
     contador = contador+1
-    print("Iteración número {}".format(contador))
+    print("Iteración número",contador)
 print ("¡Fin!")
 ```
 
-Para detener una ejecución se utiliza la sentencia `break`:
+Para detener una ejecución de forma voluntaria se utiliza la sentencia `break`:
    
 ```python 
 contador = 0
 while(contador < 5):
     contador = contador+1
-    print("Iteración número {}".format(contador))
+    print("Iteración número",contador)
     if contador == 3:
         break
 print ("¡Fin!")
@@ -87,18 +91,19 @@ print ("¡Fin!")
 ```
 
 La salida del programa anterior será la siguiente:
-
+```
     Iteración número 1
     Iteración número 2
     Iteración número 4
     Iteración número 5
     Bucle while finalizado
+```
 
-Otros lenguajes de programación ofrecen otra estructura similar conocida como DO - WHILE. No es el caso de Python, por lo que habría que emular dicho comportamiento mediante nuestro código.
+Otros lenguajes de programación ofrecen otra estructura similar conocida como `DO - WHILE`. No es el caso de Python, por lo que habría que emular dicho comportamiento mediante nuestro código.
 
 #### Bucle WHILE con ELSE
 
-Para ejecutar un código al finalizar, es decir, cuando la condición es `False` y no se ha finalizado con `break`, se utiliza la expresión `else`:
+La expresión `else` puede utilizarse también tras un bloque `while`. De este forma podemos definir un bloque de código que se ejecutará una vez finalizado el bloque `while` (es decir, cuando la condición se evalúe `False` y no se haya finalizado mediante un `break`):
 
 ```python
 count = 0
@@ -138,7 +143,7 @@ for n in numeros:
         break
 ```
 
-También es posible saltar únicamente la iteración actual mediante la sentencia `continue`:
+Al igual que en otras estructuras de repetición, también es posible saltar únicamente la iteración actual mediante la sentencia `continue`:
 
 ```python
 numeros = [4,8,2,7,1,9,3,5]
@@ -153,7 +158,7 @@ for num in numeros:
 ```
 
 #### Bucle FOR con ELSE
-Python permite definir un bloque de código a ejecutar una vez la iteración por los elementos de una lista ha finalizado. Es importante mencionar que no se ejecutará si se ha finalizado mediante `break`.
+Python permite definir un bloque de código que se ejecutará una vez finalice la iteración por todos los elementos de una lista. Es importante mencionar que no se ejecutará si se ha finalizado mediante `break`.
 
 ```python
 alumnos = ["Ane", "Mikel", "Unai", "Lorea"]
