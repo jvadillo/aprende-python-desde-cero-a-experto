@@ -14,12 +14,16 @@ estudiante = {
 Las **claves tienen que ser únicas** y estar formadas por un **string o un número**. Para acceder al valor de una clave exiten dos maneras distintas:
 
 ```python
+# Acceder al valor de una clave
 edad = estudiante["edad"] # devuelve el valor de 'edad'
 nota_media = estudiante.get("nota_media") # devuelve el valor de 'nota_media'
 
+# Insertar o actualizar un valor:
 estudiante["edad"] = 25 # actualiza el valor de 'edad'
 estudiante["suspensos"] = 3 # inserta una nueva pareja clave - valor
-estudiante.update({'aprobados':'8'}): inserta una nueva pareja clave - valor o actualiza su valor si ya existiera
+
+# insertar una pareja clave - valor o actualizar si ya existe:
+estudiante.update({'aprobados':'8'})
 ```
 
 Algunos de los métodos más utilizados son los siguientes:
