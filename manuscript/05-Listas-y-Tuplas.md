@@ -3,7 +3,12 @@
 Las listas permiten **guardar más de un elemento** dentro de una variable, y además hacerlo en un orden concreto. Pueden contener un número **ilimitado** de elementos de **cualquier tipo**:
 
 ```python
+    # Lista vacía
+    lista_vacia = []
+
+    # Lista con valores
     alumnos = ["Ane", "Unai", "Itziar", "Mikel"]
+    
     print(alumnos [0]) # muestra "Ane"
     print(alumnos [1]) # muestra "Unai"
     print(alumnos [2]) # muestra "Itziar"
