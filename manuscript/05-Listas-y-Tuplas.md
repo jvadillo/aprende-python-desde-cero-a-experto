@@ -1,6 +1,6 @@
 # Listas y tuplas
 
-Las listas permiten **guardar más de un elemento** dentro de una variable en un orden concreto. Pueden contener un número **ilimitado** de variables de **cualquier tipo**:
+Las listas permiten **guardar más de un elemento** dentro de una variable, y además hacerlo en un orden concreto. Pueden contener un número **ilimitado** de elementos de **cualquier tipo**:
 
 ```python
     alumnos = ["Ane", "Unai", "Itziar", "Mikel"]
@@ -48,20 +48,31 @@ De igual manera se podría hacer mediante la sentencia `while`:
 Las tuplas son **listas inmutables**. Es decir, una vez declaradas, no se pueden realizar modificaciones sobre ellas (añadir/eliminar elementos o hacer modificaciones sobre ellos). Para definir una tupla se escriben los elementos entre paréntesis:
 
 ```python
-    valores = (1,2,3)
+    valores = (1,2,3,4,5)
+    print(valores)  # Salida: (1, 2, 3, 4, 5) 
+    
+    # tuple with mixed datatypes
+    valores_mixtos = (1, "Hola", 2.5, False)
+    print(valores_mixtos)  # Salida: (1, 'Hola', 2.5, False)
 ```
 El acceso a sus elementos se hace de igual que con listas:
 
 ```python
     valores = ("a", "b", "c","d","e","f")  
-    print(valores[1])
-    print(valores[2:4])
+    print(valores[1]) # Salida: 'b'
+    print(valores[2:4]) # Salida: ('c', 'd')
 ```
 
-Una acción típica de las tuplas es "desempaquetar" (unpack) sus valores:
+Una acción típica de las tuplas es "desempaquetar" (unpack) sus valores, es decir, asignarlos a variables directamente:
 
 ```python
-    a, b, c = valores 
+    tupla = (1, "Hola", 2.5) # Creamos la tupla
+    
+    var1, var2, var3 = tupla # Hacemos el unpack
+    
+    print(var1)      # 1
+    print(var2)      # 'Hola' 
+    print(var3)      # 2.5
 ```
 
 ## Coding time!
