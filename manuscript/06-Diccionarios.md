@@ -86,7 +86,7 @@ edades = {
    "Jokin" : 27,
    "Aitor" : 15
 }
-del edades ["Aitor"]
+del edades["Aitor"]
 ```
 Otra alternativa también utilizada y mencionada anteriormente es la función `pop()`, el cual devuelve el valor del elemento eliminado:
 
@@ -98,6 +98,7 @@ edades = {
 }
 edades.pop("Aitor")
 ```
+Es importante saber que tanto `del` como `pop()` eliminan todas las claves coincidentes.
 
 ## Coding time!
 
