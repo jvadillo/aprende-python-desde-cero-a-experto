@@ -40,15 +40,15 @@ def suma(a, b):
 	resultado = a + b
 	print(resultado)
 suma(45, 20) # parámentros posicionales
-suma(a = 45, b =20) # parametros mediante clave
+suma(b=20,a=45) # parametros mediante clave
 ```
 
 Las funciones pueden **devolver un valor** utilizando la palabra `return`. Una vez devuelto un valor, la función finaliza su ejecución.
 
 ```python
 def suma(a, b):
-resultado = a + b
-return resultado
+	resultado = a + b
+	return resultado
 
 print(suma(4,5)) # 9
 ```
@@ -87,7 +87,7 @@ print("Fuera de la función:", a)
 # Fuera de la función:5
 ```
 
-Por el contrario, las variables definidas fuera de una función sí que están accesibles desde dentro de la función. Se considera que están en el **ámbito global**. No obstante, no se podrán modifican dentro de la función a no ser que estén definidas con la palabra clave `global`.
+Por el contrario, las variables definidas fuera de una función sí que están accesibles desde dentro de la función. Se considera que están en el **ámbito global**. No obstante, no se podrán modificar dentro de la función a no ser que estén definidas con la palabra clave `global`.
 
 ## Coding time!
 
