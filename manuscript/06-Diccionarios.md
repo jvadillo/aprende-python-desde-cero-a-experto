@@ -98,7 +98,7 @@ edades = {
 }
 edades.pop("Aitor")
 ```
-Es importante saber que tanto `del` como `pop()` eliminan todas las claves coincidentes.
+Un diccionario nunca debería contener dos claves iguales. No obstante, en caso de contener una clave repetida, tanto `del` como `pop()` eliminarán todas las claves coincidentes.
 
 ## Coding time!
 
