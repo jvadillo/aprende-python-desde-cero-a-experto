@@ -34,7 +34,6 @@ Algunos de los métodos más utilizados son los siguientes:
 | `diccionario.values()` | Devuelve todos los valores del diccionario |
 | `diccionario.pop(clave[,<default>])` | Elimina la clave del diccionario y devuelve su valor asociado. Si no la encuentra y se indica un valor por defecto, devuelve el valor por defecto indicado. |
 | `diccionario.clear()` | Vacía el diccionario |
-| `diccionario.clear()` | Vacía el diccionario |
 | `clave in diccionario` | Devuelve True si el diccionario contiene la clave o False en caso contrario. |
 | `valor in diccionario.values()` | Devuelve True si el diccionario contiene el valor o False en caso contrario. |
 
