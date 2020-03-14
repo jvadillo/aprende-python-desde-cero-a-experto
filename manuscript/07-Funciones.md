@@ -101,7 +101,8 @@ Nota: Para la creación del número aleatorio, utiliza el siguiente código:
 
 ```python
 from random import randint, uniform,random
-print randint(0,10)
+
+numero = randint(0,10)
 ```
 
 ### Ejercicio 3
