@@ -14,6 +14,8 @@ class Persona:
 		print(self.nombre + " está caminando")
 ```	    
 
+Una clase es como una plantilla o modelo para crear a partir de ella objetos. Esta plantilla contiene la información para definir cómo serán los objetos, es decir, qué atributos y métodos tendrán.
+
 A partir de una clase se pueden crear tantos **objetos** como se desee. Los objetos de una clase se conocen como **instancias**. Cada objeto **contiene los atributos y métodos de la clase** y podrá asignar a esos atributos unos valores concretos. Esto se conoce como el **estado de un objeto**.
 
 ```python
