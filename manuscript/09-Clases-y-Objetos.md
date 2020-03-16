@@ -85,6 +85,24 @@ print(f"C2: Estatico {c2.atrib_estatico} - Instancia: {c2.atrib_instancia}")
 # output: C2: Estatico -1 - Instancia: 789
 ```
 
+Es importante remarcar que para acceder a los atributos de instancia se debe utilizar la palabra reservada `self`, la cual hace referencia al objeto actual. En Python no podemos utilizar `self` en cualquier momento, para utilizarlo hay que indicarlo en los métodos cómo el primer parámetro recibido.
+
+```python
+class Persona:  
+	def __init__(self, nombre, apellidos, edad):  
+		self.nombre= nombre
+		self.apellidos = apellidos 
+		self.edad = edad 
+	
+	def camina(self): # es necesario indicar 'self' como primer argumento
+		print(self.nombre + " está caminando")
+
+p1 = Persona("Mike", "Mendiola", 25) # no hay que pasarle 'self'
+p1.camina() # no hay que pasarle 'self'
+print(p1.nombre)  
+print(p1.edad)
+```
+
 ## Private y protected
 A diferencia de otros lenguajes de Programación Orientada a Objetos, todos los métodos y atributos en Python son públicos. Es decir, **no es posible definir una variable como** `private` o `protected`. 
 
