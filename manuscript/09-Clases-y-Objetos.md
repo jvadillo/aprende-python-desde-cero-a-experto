@@ -14,7 +14,7 @@ class Persona:
 		print(self.nombre + " está caminando")
 ```	    
 
-A partir de una clase se pueden crear tantas **objetos** como se desee. Los objetos de una clase se conocen como **instancias**. Cada objeto **contiene los atributos y métodos de la clase** y podrá asignar a esos atributos unos valores concretos. Esto se conoce como el **estado de un objeto**.
+A partir de una clase se pueden crear tantos **objetos** como se desee. Los objetos de una clase se conocen como **instancias**. Cada objeto **contiene los atributos y métodos de la clase** y podrá asignar a esos atributos unos valores concretos. Esto se conoce como el **estado de un objeto**.
 
 ```python
 p1 = Persona() # la variable p1 contiene un objeto de la clase Persona
