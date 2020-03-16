@@ -131,10 +131,10 @@ Por último, será necesario controlar que el método avanzar nunca obtendrá un
 
 Ejemplo:
 
- - `repostar(50)` # gasolina = 50
- - `recorrer(100)` # kilometros_recorridos = 100, gasolina = 40
- - `recorrer(40)` # kilometros_recorridos = 140, gasolina = 36
- - `recorrer(180)` # kilometros_recorridos = 320, gasolina = 18
+ - `avanzar(50)` # gasolina = 50
+ - `avanzar(100)` # kilometros_recorridos = 100, gasolina = 40
+ - `avanzar(40)` # kilometros_recorridos = 140, gasolina = 36
+ - `avanzar(180)` # kilometros_recorridos = 320, gasolina = 18
 
 ### Ejercicio 2
 Crea una clase Robot que simule los movimientos de un robot y calcule la posición en la que se encuentra cada momento. El robot se moverá por un tablero infinito de coordenadas X e Y, podrá realizar los siguientes movimientos:
