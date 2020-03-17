@@ -78,6 +78,7 @@ print(f"Total de kms bici: {bicicleta.kilometros}")
 
 Resultado:
 
+```
 Total de kms coche: 120. Gasolina: 8.0
 Total de kms coche: 160. Gasolina: 4.0
 
@@ -85,6 +86,7 @@ Total de kms bici: 30
 Es necesario hinchar para recorrer la cantidad indicada de kms.
 Total de kms bici: 30
 Total de kms bici: 55
+```
 
 ### Ejercicio 2
 Continuando con el Ejercicio 4 del tema anterior, crea una clase `Poligono` y otra llamada `Cuadrado`. La clase `Poligono` será el padre de `Triangulo` y `Cuadrado`, y contendrá las propiedades y métodos comunes de ambos. Ambos tendrán también otra propiedad llamada `color`.
@@ -99,5 +101,8 @@ print(f" Cuadrado {c1.color} con {c1.perimetro()}m de perímetro.")
 
 Resultado:
 
+```
 Es un Triángulo isósceles rojo con 9m de perímetro.
 Cuadrado azul con 16m de perímetro.
+```
+
