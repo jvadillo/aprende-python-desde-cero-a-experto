@@ -144,16 +144,36 @@ Crea una clase Robot que simule los movimientos de un robot y calcule la posici�
 
 El robot tendrá un método llamado `mueve()` que recibirá la orden como parámetro y otro método, `posicion_actual()`,  que indicará su posición en las coordenadas X e Y. Al crear el robot este se inicializará a las coordenadas (0,0).
 
+Puedes utilizar el siguiente código para probar la clase creada:
+
+```python
+miRobot = Robot()
+orden = "A"
+while orden != 'fin':
+    orden = input("Introduce la orden: ")
+    miRobot.mueve(orden)
+    print(miRobot.posicion_actual())
+```
+
 Ejemplo:
-- mueve("A") # (1,0)
-- mueve("A") # (2,0)
-- mueve("I") # (2,-1)
-- mueve("A") # (3,-1)
-- mueve("D") # (3,0)
-- mueve("D") # (3,1)
-- mueve("D") # (3,2)
-- mueve("R") # (2,2)
-- mueve("I") # (2,1)
+
+```
+>> Introduce la orden: A
+Posición actual: 1,0
+>> Introduce la orden: A
+Posición actual: 2,0
+>> Introduce la orden: I
+Posición actual: 2,-1
+>> Introduce la orden: A
+Posición actual: 3,-1
+>> Introduce la orden: I
+Posición actual: 3,-2
+>> Introduce la orden: D
+Posición actual: 3,-1
+>> Introduce la orden: R
+Posición actual: 2,-1
+>> Introduce la orden: fin
+```
 
 ### Ejercicio 3
 Mejora el ejercicio anterior de forma que el robot pueda recibir una secuencia de movimientos.
