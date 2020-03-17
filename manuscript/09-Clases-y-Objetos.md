@@ -177,10 +177,24 @@ Posición actual: 2,-1
 
 ### Ejercicio 3
 Mejora el ejercicio anterior de forma que el robot pueda recibir una secuencia de movimientos.
-Ejemplo:
-- mueve("AADDADIR") # (2,2)
+Por ejemplo:
+- mueve("AADDADIR")
 
 También deberá tener otros dos métodos: uno que devuelva todas las órdenes recibidas y otro capaz de listar los movimientos necesarios para volver a la posición inicial (0,0).
+
+Aquí tienes un ejemplo de una posible ejecución del programa:
+
+```
+Introduce la orden: AADAD
+Posición actual: 3,2
+Introduce la orden: IAADR
+Posición actual: 4,2
+Introduce la orden: fin
+Posición actual: 4,2
+
+Órdenes recibidas: AADADIAADRfin
+Secuencia para posición inicial: RRRRII
+```
 
 ### Ejercicio 4
 Crea la clase Triangulo que almacene la longitud de cada uno de sus lados. Deberá contener los siguientes métodos:
