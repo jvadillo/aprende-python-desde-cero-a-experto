@@ -150,8 +150,27 @@ frase = "Meses: {1}, {0} y {2}".format('Enero','Febrero','Marzo')
 print(frase)
 
 # Especificar el orden mediante parejas clave-valor:
-orden_palabra = "Meses: {ene}, {feb} y {mar}".format(ene='Enero', feb='Febrero',m='Marzo')
+frase = "Meses: {ene}, {feb} y {mar}".format(ene='Enero', feb='Febrero',m='Marzo')
 print(frase)
+```
+
+### Cadenas 'f' (f-strings)
+La versión 3.6 de Python trajo un gran avance a la hora de integrar variables o expreiones en cadenas de carácteres. Se introdujeron las llamadas `f-strings`, una forma más cómoda y directa para insertar variables y expresiones en cadenas. Permiten introducir cualquier variable o expresión dentro de un string incluyendo la variable entre llaves `{` y `}`.
+
+Veamos un ejemplo:
+
+```python
+nombre = "Nora"
+edad = 22
+saludo = f"Me llamo {nombre} y tengo {edad} años."
+```
+
+Para indicar que se trata de un `f-string`, este deberá incluir la letra 'f' antes del comiendo de la cadena (antes de las comillas). A continuación se muestra otro ejemplo en el que se introduce una expresión:
+
+```python
+a = 4
+b = 3
+print(f"La multiplicación de {a} y {b} es igual a {a * b}")
 ```
 
 ### Conversión de tipos
