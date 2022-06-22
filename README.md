@@ -1,4 +1,4 @@
-# Aprende Python desde cero a experto :rocket:
+# Curso laboraTORIO Ing Software B:
 [![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://www.jonvadillo.com) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://www.jonvadillo.com) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://www.jonvadillo.com)
 
 **Descargar libro [aquí](https://leanpub.com/aprende-python/)**
